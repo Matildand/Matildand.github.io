@@ -1,0 +1,30 @@
+body {
+  font-size: 1.2rem;
+  text-align: center;
+}
+h1 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+p {
+  border: 5px inset darkslateblue;
+  background-color: rgb(194, 220, 236);
+  width: 400px;
+  min-height: 100px;
+  /* centering horizontal */
+  margin: 0 auto;
+  padding: 7px 20px 7px 20px;
+  margin-bottom: 10px;
+}
+
+.centered {
+  /* for centering vertical, line height must be the same as height of box. Doesnt work with lots of text in a min-height box */
+  line-height: 100px;
+}
+
+span {
+  color: cornflowerblue;
+  display: inline;
+}
