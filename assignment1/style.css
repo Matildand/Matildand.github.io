@@ -1,0 +1,107 @@
+body {
+  background-color: black;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.1rem;
+  padding: 1rem;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+/* unvisited link */
+a:link {
+  color: #6cfafb;
+}
+
+/* visited link */
+a:visited {
+  color: #d2fa06;
+}
+
+/* mouse over link */
+a:hover {
+  color: #fc046c;
+}
+
+/* selected link */
+a:active {
+  color: #843ceb;
+}
+
+p {
+  background-color: white;
+  width: 700px;
+  min-height: 50px;
+  /* centering horizontal */
+  margin: 0 auto;
+  padding: 7px 20px 7px 20px;
+  margin-bottom: 15px;
+}
+ul {
+  background-color: #fc046c;
+  width: 700px;
+  min-height: 50px;
+  /* centering horizontal */
+  margin: 0 auto;
+  padding: 7px 20px 7px 20px;
+  margin-bottom: 10px;
+  border: 5px solid #6cfafb;
+  color: #6cfafb;
+}
+li {
+  padding-left: 20px;
+  list-style-position: inside;
+}
+/* class colours to match the quarters of colours, i colour-picked the hex codes from the website tomake sure i got the right colours*/
+.yellow {
+  background-color: #d2fa06;
+  border: 5px solid #843ceb;
+  color: #843ceb;
+}
+.purple {
+  background-color: #843ceb;
+  border: 5px solid #d2fa06;
+  color: #d2fa06;
+}
+.cyan {
+  background-color: #6cfafb;
+  border: 5px solid #fc046c;
+  color: #fc046c;
+}
+/* triangle class designed to look like the triangle part of the website */
+.triangle {
+  background-color: #b5179e;
+  border: 5px double white;
+  color: white;
+}
+/* blocks class based on the moveable pixels */
+.blocks {
+  background-color: black;
+  border: 5px dashed white;
+  color: white;
+}
+.colour1 {
+  background-color: black;
+  border: 5px solid #6cfafb;
+  color: #6cfafb;
+}
+.colour2 {
+  background-color: black;
+  border: 5px solid #d2fa06;
+  color: #d2fa06;
+}
