@@ -3,60 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- linked similar fonts as used on original website -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- resetting formatting -->
     <link rel="stylesheet" href="reset.css" />
+    <!-- connecting to stylesheet -->
     <link rel="stylesheet" href="style.css" />
+    <!-- name of webpage in browser window -->
     <title>Interactive Experience</title>
   </head>
   <body>
-    <h1>Assignment 1 - Intereactive Experience Review</h1>
+    <!-- used span and class to add alternate font and colour inline with the rest of the sentence. I used two different classes so the colours would be different -->
+    <h1>
+      Assignment <span class="comic1"> 1 </span> - Intereactive
+      <span class="comic2">Experience</span> Review
+    </h1>
     <h2>
       Based on this interactive experience -
-      <a href="https://palat2023.com/"> Palat2023 </a>
+      <a href="https://palat2023.com/">
+        Palat2023
+        <!-- added embedded link to the site i am referencing --></a
+      >
     </h2>
-    <p class="yellow">
-      1. The bright background colours were the first things I noticed when
-      loading the page. How the text was changing as the colours moved across
-      the page in line with the mouse hovering. and each of the sections focused
-      on movement
-    </p>
-    <ul>
-      2. In the two minutes i spent with the experience I:
-      <li>Scrolled up and down to see how the images would change</li>
-      <li>
-        Swiped my cursor across the screen to read the different words connected
-        to each colour
-      </li>
-      <li>Moved my mouse around to see the sensitivity of the moving pixels</li>
-      <li>
-        Repeatedly hovered over the triangle to see the rotation and change of
-        the text
-      </li>
-      <li>
-        Repeatedly hovered over the text at the bottom of the page, rereading to
-        see how the letters moved around
-      </li>
-      <li>
-        Clicking on the text and end of the page anticipating something
-        happening
-      </li>
-    </ul>
-    <p class="purple">
-      3. I spent the most time on the first section of the page, moving around
-      the cursor to see the different words that would appear in each quarter of
-      the colours. It engaged me the longest as it was the most changeable and
-      had had deeper interactions for me to discover
-    </p>
-    <p class="cyan">
-      4. My most common action while interacting with the page was moving around
-      the mouse and hovering over the images/aspects. There wasn't much
-      interaction related to clicking or anything else.
-    </p>
+    <!-- used div to make the quartered grid similar to the opening colour grid in the original site and class to change styling for each indivdually-->
+    <div id="grid-container">
+      <p class="yellow">
+        1. The bright background colours were the first things I noticed when
+        loading the page. How the text was changing as the colours moved across
+        the page in line with the mouse hovering. and each of the sections
+        focused on movement
+      </p>
+      <!-- used ul to make a dot point list -->
+      <ul>
+        2. In the two minutes i spent with the experience I:
+        <li>Scrolled up and down to see how the images would change</li>
+        <li>
+          Swiped my cursor across the screen to read the different words
+          connected to each colour
+        </li>
+        <li>
+          Moved my mouse around to see the sensitivity of the moving pixels
+        </li>
+        <li>
+          Repeatedly hovered over the triangle to see the rotation and change of
+          the text
+        </li>
+        <li>
+          Repeatedly hovered over the text at the bottom of the page, rereading
+          to see how the letters moved around
+        </li>
+        <li>
+          Clicking on the text and end of the page anticipating something
+          happening
+        </li>
+      </ul>
+      <p class="cyan">
+        3. I spent the most time on the first section of the page, moving around
+        the cursor to see the different words that would appear in each quarter
+        of the colours. It engaged me the longest as it was the most changeable
+        and had had deeper interactions for me to discover
+      </p>
+      <p class="purple">
+        4. My most common action while interacting with the page was moving
+        around the mouse and hovering over the images/aspects. There wasn't much
+        interaction related to clicking or anything else.
+      </p>
+      <!-- end of div here to encapsulate only the four text blocks -->
+    </div>
+
     <p class="triangle">
       5. I believe the intended goal of the experience is to display the
       artist's ability in movement and interactive coding. Each segment appeared
@@ -64,6 +89,7 @@
       artist's skillset, the links and contact information at the bottom of the
       page reinforce the idea of the webpage being a portfolio of sorts.
       <br />
+      <!-- used br to seperate the paragraphs within the same text box -->
       <br />
       6. I think the webpage communicates this goal through the excessive nature
       of all of the aspects. The fact that every detail on the page down to the
@@ -72,7 +98,11 @@
       scroll down aspect of the page also gives the impression of a gallery,
       displaying a wide range of the artist's work.
     </p>
-
+    <!-- used div to structure the images to make it easier to centre and add the border to match the paragraphs -->
+    <div id="purpletri">
+      <!-- linked image to attached file in folder -->
+      <img src="purpletri.png.png" alt="image from original site" width="700" />
+    </div>
     <p class="triangle">
       7. My impression of how the experience should be interacted with is that
       it is likely designed to be viewed once to provide a quick snapshot of the
@@ -111,6 +141,10 @@
       professional setting the previous references create, as the artist appears
       to be trying to impress viewers with the skills they are showing off.
     </p>
+    <div id="blocksimg">
+      <!-- linked image to attached file in folder -->
+      <img src="Blocks.png.png" alt="image of movable blocks" />
+    </div>
     <p class="colour1">
       12. The most frustrating part of the experience to me is the lack of
       clickable features. I think that when an asset of a website moves or draws
@@ -124,5 +158,10 @@
       aligned diagonally, and the borders of each colour were continuously
       straight and rectangular.
     </p>
+    <h2>
+      Made <span class="comic2">by</span> Matilda Anderson<span class="comic1"
+        >(s4007568)</span
+      >
+    </h2>
   </body>
 </html>

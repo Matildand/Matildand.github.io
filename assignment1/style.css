@@ -1,11 +1,14 @@
 body {
+  /* background of the whole page */
   background-color: black;
+  /* so the whole page is the new font */
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
   font-size: 1.1rem;
   padding: 1rem;
+  /* added a margin at the bottom so the page doesnt end immediatly under the content*/
   margin-bottom: 30px;
 }
 
@@ -13,7 +16,8 @@ h1 {
   color: white;
   text-align: center;
   font-size: 2.5rem;
-  margin-top: 20px;
+  /* added a margin at the top so the heading sits better under the url */
+  margin-top: 15px;
   margin-bottom: 25px;
 }
 h2 {
@@ -21,26 +25,50 @@ h2 {
   text-align: center;
   font-size: 1.5rem;
   margin-top: 10px;
+  /* added bottom margin to create break before question answers start */
   margin-bottom: 20px;
 }
-/* unvisited link */
-a:link {
-  color: #6cfafb;
-}
 
-/* visited link */
-a:visited {
-  color: #d2fa06;
+/* comic classes to switch font and colour */
+.comic1 {
+  font-family: "Comic Neue", cursive;
+  font-weight: 700;
+  font-style: normal;
+  /* incresed font size to replicate styling on referenced site */
+  font-size: 3rem;
+  color: #843ceb;
 }
-
-/* mouse over link */
-a:hover {
+.comic2 {
+  font-family: "Comic Neue", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3rem;
   color: #fc046c;
 }
 
-/* selected link */
+/* link colours depending on state */
+a:link {
+  color: #6cfafb;
+}
+a:visited {
+  color: #d2fa06;
+}
+a:hover {
+  color: #fc046c;
+}
 a:active {
   color: #843ceb;
+}
+
+#grid-container {
+  margin: 0 auto;
+  width: 750px;
+  min-height: 500px;
+  display: grid;
+  /* two columns and two rows to make quartered grid */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-bottom: 15px;
 }
 
 p {
@@ -50,21 +78,23 @@ p {
   /* centering horizontal */
   margin: 0 auto;
   padding: 7px 20px 7px 20px;
+  /* bottom margin to create equal space between text boxes */
   margin-bottom: 15px;
 }
+/* ul with similar values to p so it looks the same */
 ul {
   background-color: #fc046c;
-  width: 700px;
-  min-height: 50px;
+  width: 375px;
+  height: 350px;
   /* centering horizontal */
-  margin: 0 auto;
-  padding: 7px 20px 7px 20px;
-  margin-bottom: 10px;
+  margin: 2px;
+  padding: 20px 20px 7px 20px;
   border: 5px solid #6cfafb;
   color: #6cfafb;
 }
 li {
   padding-left: 20px;
+  /* list style so the dot points are indented in under the heading paragraph */
   list-style-position: inside;
 }
 /* class colours to match the quarters of colours, i colour-picked the hex codes from the website tomake sure i got the right colours*/
@@ -72,16 +102,34 @@ li {
   background-color: #d2fa06;
   border: 5px solid #843ceb;
   color: #843ceb;
+  width: 375px;
+  height: 350px;
+  /* struggled to use margins get the quarters to line up close together in the grid */
+  margin-left: 1px;
+  margin-bottom: 2px;
+  margin: 2px;
+  /* varied padding used across the classes to centre the text vertically inside the boxes */
+  padding: 110px 7px;
 }
 .purple {
   background-color: #843ceb;
   border: 5px solid #d2fa06;
   color: #d2fa06;
+  width: 375px;
+  height: 350px;
+  margin-left: 1px;
+  margin: 2px;
+  padding: 110px 7px;
 }
 .cyan {
   background-color: #6cfafb;
   border: 5px solid #fc046c;
   color: #fc046c;
+  width: 375px;
+  height: 350px;
+  margin-left: 1px;
+  margin: 2px;
+  padding: 100px 7px;
 }
 /* triangle class designed to look like the triangle part of the website */
 .triangle {
@@ -89,11 +137,26 @@ li {
   border: 5px double white;
   color: white;
 }
+/* id styled to look like paragraph class above*/
+#purpletri {
+  margin: 0 auto;
+  width: 700px;
+  border: 5px double white;
+  margin-bottom: 15px;
+}
+
 /* blocks class based on the moveable pixels */
 .blocks {
   background-color: black;
   border: 5px dashed white;
   color: white;
+}
+/* id styled to look like paragraph class above*/
+#blocksimg {
+  margin: 0 auto;
+  width: 700px;
+  border: 5px dashed white;
+  margin-bottom: 15px;
 }
 .colour1 {
   background-color: black;
@@ -104,4 +167,6 @@ li {
   background-color: black;
   border: 5px solid #d2fa06;
   color: #d2fa06;
+  /* added bottom margin to create space between final paragraph and credit */
+  margin-bottom: 40px;
 }
