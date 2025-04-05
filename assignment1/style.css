@@ -64,8 +64,9 @@ a:active {
 
 #grid-container {
   margin: 0 auto;
-  width: 750px;
-  min-height: 500px;
+  /* border: 2px solid white; - blocked out for testing*/
+  width: 770px;
+  min-height: 300px;
   display: grid;
   /* two columns and two rows to make quartered grid */
   grid-template-columns: 1fr 1fr;
@@ -118,7 +119,7 @@ li {
   border: 5px solid #d2fa06;
   color: #d2fa06;
   width: 375px;
-  height: 350px;
+  height: 375px;
   margin-left: 1px;
   margin: 2px;
   padding: 110px 7px;
@@ -128,7 +129,7 @@ li {
   border: 5px solid #fc046c;
   color: #fc046c;
   width: 375px;
-  height: 350px;
+  height: 375px;
   margin-left: 1px;
   margin: 2px;
   padding: 100px 7px;
