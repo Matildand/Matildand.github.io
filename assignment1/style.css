@@ -64,7 +64,7 @@ a:active {
 
 #grid-container {
   margin: 0 auto;
-  /* border: 2px solid white; - blocked out for testing*/
+  border: 2px solid white;
   width: 770px;
   min-height: 300px;
   display: grid;
@@ -121,7 +121,7 @@ li {
   width: 375px;
   height: 375px;
   margin-left: 1px;
-  margin: 2px;
+  /* margin: 2px; */
   padding: 110px 7px;
 }
 .cyan {
@@ -131,7 +131,7 @@ li {
   width: 375px;
   height: 375px;
   margin-left: 1px;
-  margin: 2px;
+  /* margin: 2px; */
   padding: 100px 7px;
 }
 /* triangle class designed to look like the triangle part of the website */
