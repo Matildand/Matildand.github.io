@@ -64,7 +64,8 @@ a:active {
 
 #grid-container {
   margin: 0 auto;
-  border: 2px solid white;
+  /* added border to visually see sizing easier but commented out so its not visable */
+  /* border: 2px solid white; */
   width: 770px;
   height: 755px;
   display: grid;
