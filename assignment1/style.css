@@ -66,7 +66,7 @@ a:active {
   margin: 0 auto;
   border: 2px solid white;
   width: 770px;
-  height: 753px;
+  height: 755px;
   display: grid;
   /* two columns and two rows to make quartered grid */
   grid-template-columns: 1fr 1fr;
