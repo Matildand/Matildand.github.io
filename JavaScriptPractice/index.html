@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Excercise 7 -->
+     <script>
+        function myFunction() {
+            document.getElementById("headp").innerHTML="The function is invoked (called) when a button is clicked";
+        }
+     </script>
+    <title>Document</title>
+</head>
+<body>
+<!-- Exercise 1 -->
+    <h1>What can JavaScript do?</h1>
+    <p id="demo">JavaScript can change HTML content.</p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "To different text on interaction!"'"> Try Me!</button>
+
+    <hr>
+<!-- Excercise 2 -->
+ <p>Javascript can change HTML attribute values</p>
+ <p>In this case Javascript changes the values of the src attribute of an image.</p>
+
+ <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+ <img id="myImage" src="pic_bulboff.gif" alt="light off" style="width: 100px;">
+ <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+<hr>
+<!-- Excercise 3 -->
+<p id="styleChange">It can change the styling of an HTML element</p>
+<button type="button" onclick="document.getElementById('styleChange').style.fontSize='35px'">Bigger!!!</button>
+
+<hr>
+<!-- Excercise 4/5 -->
+<p id="hidden"> JavaScript can hide and reveal HTML elements</p>
+<button type="button" onclick="document.getElementById('hidden').style.display='none'">Hide</button>
+<button type="button" onclick="document.getElementById('hidden').style.display='block'">Show</button>
+
+<hr>
+<!-- Excercise 6 -->
+<h2>JavaScript in Body</h2>
+<p id="bodyscript"></p>
+<script> document.getElementById("bodyscript").innerHTML="adding text via JavaScript"; </script>
+
+<hr>
+<!-- Excercise 7 -->
+ <h2>Demo JavaScript in head code</h2>
+ <p id="headp">In this example, a JavaScript function is placed in the head section of the HTML page.</p>
+ <button type="button" onclick="myFunction()">Test</button>
+ <p>*Possible also with script tag in body section </p>
+
+ <hr>
+ <!-- Excercise 8 -->
+<h2>Using innerHTML</h2>
+<p id="inner"></p>
+<script>
+    document.getElementById("inner").innerHTML = "<h3>using the innerHTML property to change the HTML content of the HTML element</h3>";
+</script>
+
+<hr>
+ <!-- Excercise 9 -->
+ <h2>Using innerText</h2>
+ <p id="text"></p>
+ <script>
+     document.getElementById("text").innerText = "Use innerHTML when you want to change an HTML element. Use innerText when you only want to change the plain text";
+ </script>
+
+<hr>
+<!-- Excercise 10 -->
+<h2>Using document.write</h2>
+<p>Never call document.write after the document has finished loading. (like through a button or something)
+As it will overwrite the whole document. The document.write() method should only be used for testing.</p>
+<script>
+document.write(5 + 6);
+</script>
+
+<hr>
+<!-- Excercise 11 -->
+<h2>Using windows.alert</h2>
+<p>In JavaScript, the window object is the global scope object. This means that variables, properties, and methods by default belong to the window object. This also means that specifying the window keyword is optional</p>
+<!-- <script>
+    alert(5+6);
+</script> -->
+<button type="button" onclick="alert(5+6)">So it doesnt come up everytime the page reloads lol</button>
+
+<hr>
+<!-- Excercise 12 -->
+<h2>Printing in JavaScript</h2>
+<button onclick="window.print()">Print this page</button>
+
+<hr>
+<!-- Excercise 13 -->
+
+
+
+
+
+
+</body>
+</html>
