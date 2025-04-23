@@ -1,7 +1,8 @@
 :root {
-  --primary-bg-color: #fffbe7;
-  --text-color: #333;
-  --main-bg-color: #815a36;
+  --primary-bg-color: #67978d;
+  --text-color: aliceblue;
+  --accent-color: #925184;
+  --main-bg-color: #0c503f;
   --main-text-color: #fff;
   --main-btn-bg-color: #938989;
 }
@@ -12,6 +13,7 @@ p,
 ul {
   margin: 0;
   padding: 0;
+  font-size: 1.1rem;
 }
 
 body {
@@ -22,7 +24,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+}
+h2 {
+  font-size: 1.4rem;
+}
+h3 {
+  font-size: 1.3rem;
+}
+h4 {
+  font-size: 1.2rem;
 }
 
 /* Add additional styles as needed */
@@ -30,8 +41,9 @@ body {
 /* Create a container for the main content */
 .container {
   max-width: 1000px;
-  width: 100%;
+  width: 800px;
   padding: 10px;
+  border: 5px;
 }
 
 /* Header styling */
@@ -45,8 +57,11 @@ header {
 
 /* Navigation styling */
 nav {
-  margin-top: 20px;
   text-align: center;
+  background-color: var(--accent-color);
+  color: var(--main-text-color);
+  padding: 5px 0;
+  width: 100%;
 }
 
 nav ul {
@@ -65,9 +80,12 @@ nav a {
 }
 
 /* Media player styling */
+/* cant make it bigger???? */
 .media-player {
-  width: 100%;
+  width: 500px;
   margin: 0 auto;
+  padding: 20px 40px;
+  border: 5px solid #0c503f;
 }
 
 .media-player video {
@@ -117,4 +135,16 @@ footer {
   text-align: center;
   padding: 10px 0;
   width: 100%;
+}
+
+.instruction {
+  list-style: "-";
+  text-indent: 25px;
+  font-size: 1rem;
+}
+
+ol {
+  text-indent: 25px;
+  font-size: 1rem;
+  /* how do i make it so the second line is also indented */
 }
