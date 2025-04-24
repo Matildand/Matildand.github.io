@@ -17,7 +17,9 @@ ul {
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   background-color: var(--primary-bg-color);
   color: var(--text-color);
   line-height: 1.6;
@@ -53,6 +55,9 @@ header {
   padding: 10px 0;
   text-align: center;
   width: 100%;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Navigation styling */
@@ -85,7 +90,6 @@ nav a {
   width: 500px;
   margin: 0 auto;
   padding: 20px 40px;
-  border: 5px solid #0c503f;
 }
 
 .media-player video {
@@ -147,4 +151,9 @@ ol {
   text-indent: 25px;
   font-size: 1rem;
   /* how do i make it so the second line is also indented */
+}
+
+#content {
+  border: 5px solid #0c503f;
+  padding: 10 25 10 25;
 }
