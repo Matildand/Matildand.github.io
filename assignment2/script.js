@@ -1,3 +1,24 @@
+const likeBtn = document.getElementById("like-btn");
+
+const likeUnlikeImg = document.getElementById("like-unlike-img");
+
+let toggled = false;
+function toggleLiked() {
+  toggled = !toggled;
+
+  if (toggled) {
+    likeUnlikeImg.src = "https://img.icons8.com/ios-filled/50/filled-like.png";
+  } else {
+    likeUnlikeImg.src = "https://img.icons8.com/ios/50/like--v1.png";
+  }
+}
+
+const shareBtn = document.getElementById("share");
+
+function shareAlert() {
+  alert("Share this tutorial and craft with your friends!!");
+}
+
 const video = document.querySelector("#custom-video-player");
 
 const playPauseBtn = document.querySelector("#play-pause-btn");

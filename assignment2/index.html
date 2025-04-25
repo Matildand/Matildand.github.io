@@ -37,6 +37,33 @@
       </ul>
     </nav>
 
+    <cover id="covertitle">
+      <img id="wheel" src="pinwheel.png" alt="screenshot of windmill" />
+      <div>
+        <h2 id="title">D.I.Y Functional Handeld Windmills</h2>
+        <hr>
+        <div class="top-controls">
+          <button id="like-btn" onclick="toggleLiked()">
+          <img
+            id="like-unlike-img"
+            src="https://img.icons8.com/ios/50/like--v1.png"
+            alt="like button"
+            width="40"
+            height="40"
+          />
+          <button id="share" onclick="shareAlert()">
+            <img 
+            src="https://img.icons8.com/ios-filled/50/share-3.png" 
+            alt="share icon"
+            width="35"
+            height="35"></button>
+        </div>
+        <hr>
+        
+        </button>
+      </div>
+    </cover>
+
     <!-- Main Content Section -->
     <main class="container">
       <!-- Media Player Section -->
@@ -68,7 +95,8 @@
       <!-- Additional Content Section -->
       <section id="content">
         <h3>Written Instructions</h3>
-        <h4>Materials</h4>
+         <section class="sectional">
+          <h4>Materials</h4>
         <ul class="instruction">
           <li>
             12.5cm x 12.5cm Foam sheets (& any off cuttings in a different
@@ -78,14 +106,18 @@
           <li>Paper straws</li>
           <li>Pipe Cleaners</li>
         </ul>
-        <h4>Tools</h4>
+      </section>
+        <section class="sectional">
+          <h4>Tools</h4>
         <ul class="instruction">
           <li>Hole Puncher</li>
           <li>Scissors</li>
           <li>Glue stick lid (or any round lid that can make an impression)</li>
         </ul>
-        <h4>Method</h4>
-        <p>Making the wheel</p>
+      </section>
+        <section class="sectional">
+          <h4>Method</h4>
+        <p id="indent">Making the wheel</p>
         <ol>
           <li>Layout your 12.5cm x 12.5cm foam sheet</li>
           <li>
@@ -163,8 +195,12 @@
             ensure the washer cannot fall off
           </li>
         </ol>
-
-        <button onclick="window.print()">Print this page</button>
+      </section>
+        
+        <div class="print">
+          <button  onclick="window.print()">Print this page</button>
+        </div>
+        
 
         <!-- Add more content as needed -->
       </section>
@@ -177,6 +213,14 @@
       <a href="https://icons8.com">Icons8</a>
       <a href="https://icons8.com/icon/61012/pause">Pause</a> icon by
       <a href="https://icons8.com">Icons8</a>
+      <a target="_blank" href="https://icons8.com/icon/37975/love">Love</a> icon
+      by
+      <a target="_blank" href="https://icons8.com">Icons8</a>
+      <a target="_blank" href="https://icons8.com/icon/87/heart">Heart</a> icon
+      by
+      <a target="_blank" href="https://icons8.com">Icons8</a>
+      <a target="_blank" href="https://icons8.com/icon/58564/share">Share</a> icon by 
+      <a target="_blank" href="https://icons8.com">Icons8</a>
     </footer>
   </body>
 </html>
