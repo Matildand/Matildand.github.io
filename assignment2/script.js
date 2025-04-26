@@ -40,8 +40,20 @@ function togglePlayPause() {
     playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/play--v1.png";
   }
 }
+
 function updateProgressBar() {
   const value = (video.currentTime / video.duration) * 100;
   progressBar.style.width = value + "%";
+}
+
+function playFrom(seconds) {
+  video.currentTime = seconds;
+  video.play();
+}
+
+let topbtn = document.getElementById("topBtn");
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 // Add other functionalities here
