@@ -1,3 +1,4 @@
+/* Changed the colours the match the title screen in the provided craft video */
 :root {
   --primary-bg-color: #67978d;
   --text-color: aliceblue;
@@ -6,7 +7,7 @@
   --main-text-color: #fff;
   --main-btn-bg-color: #938989;
 }
-
+/* to ensure that the scroll to top button is smooth and doesnt jump */
 html {
   scroll-behavior: smooth;
 }
@@ -18,6 +19,8 @@ ul {
   padding: 0;
   font-size: 1.1rem;
 }
+/* I added in the letter spacing to the title as I felt the font made it look
+too squished */
 h1 {
   font-size: 1.8rem;
   letter-spacing: 2px;
@@ -48,12 +51,11 @@ h4 {
   padding-bottom: 5px;
   font-weight: bold;
 }
+
 p {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-
-/* Add additional styles as needed */
 
 /* Create a container for the main content */
 .container {
@@ -99,25 +101,32 @@ nav a {
   text-decoration: none;
   color: var(--text-color);
 }
-
+/* added styling id for the cover container */
 #covertitle {
+  /* I used a visual border to help me see what was happening when
+  trying to use the grid display */
   border: 2px dashed #e5e5cb56;
   width: 800px;
   min-height: 100;
   padding: 5px;
+  /* used grid display so the image and the text/buttons could be next
+  to each other */
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+/* wheel id for the image */
 #wheel {
+  /* grid column so it covered 2 thirds of the columns */
   grid-column: 1/3;
   border: solid 1px #0c503f;
 }
+/* Title styling */
 #title {
   font-size: 2.5rem;
 }
-
+/* container class for like/share buttons */
 .top-controls {
   display: flex;
   align-items: center;
@@ -126,15 +135,17 @@ nav a {
   width: 100%;
   margin-bottom: 10px;
 }
-
+/* styling for all buttons inside the containers */
 .top-controls button {
   background-color: var(--accent-color);
   border: none;
+  /* border raidus to make buttons appear curved  */
   border-radius: 30%;
   padding: 8px 8px;
   cursor: pointer;
   font-size: 16px;
   display: flex;
+  /* the images on the buttons are centred vertically and horizontal  */
   align-items: center;
   justify-content: center;
   width: 55px;
@@ -143,14 +154,17 @@ nav a {
 
 /* Media player styling */
 .flex-container {
+  /* border for visual help in styling */
   border: 2px dashed #e5e5cb56;
   display: flex;
 }
-
+/* section for chapter buttons */
 steps {
   display: grid;
+  /* two columns for the buttons */
   grid-template-columns: 1fr 1fr;
   gap: 8px;
+  /* flex grow so the steps fill the excess space next to the media player */
   flex-grow: 1;
   margin: 20 30 20 2;
 }
@@ -209,15 +223,6 @@ steps button {
   transition: width 0.3s ease;
 }
 
-/* Footer styling */
-footer {
-  background-color: var(--main-bg-color);
-  color: var(--main-text-color);
-  text-align: center;
-  padding: 10px 0;
-  width: 100%;
-}
-
 .bold {
   font-weight: bold;
 }
@@ -267,4 +272,12 @@ ol {
   font-size: 16px;
   display: flex;
   align-items: center;
+}
+/* Footer styling */
+footer {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
 }
