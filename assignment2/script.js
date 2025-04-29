@@ -58,14 +58,15 @@ function updateProgressBar() {
 }
 
 // Chapters button
-// i discovered the playFrom(seconds) function to create buttons that would play the video from
-// a specific timestamp
+// the currentTime function creates buttons that play the video from a specific timestamp
 // this function connects to the onclick function of the buttons in html
 function playFrom(seconds) {
   // allows the computer to know what unit the numbers are in so it can jump to the right time
   video.currentTime = seconds;
   // so it plays automatically when the button is presssed
   video.play();
+  // so the pause button appears when the video is played from the chapter buttons
+  playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
 }
 
 // Back to top buttom

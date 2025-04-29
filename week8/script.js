@@ -1,6 +1,17 @@
 const myVideo = document.querySelector("#my-video");
 console.log(myVideo);
 
+myVideo.addEventListener("timeupdate", updateProgressbar);
+
+const progressBar = document.querySelector("#progress-bar");
+console.log(progressBar);
+
+function updateProgressbar() {
+  let progress = (myVideo.currentTime / myVideo.duration) * 100;
+  console.log(progress);
+  progressBar.style.width = progress + "%";
+}
+
 const playPauseButton = document.querySelector("#play-pause-button");
 console.log(playPauseButton);
 

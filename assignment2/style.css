@@ -177,16 +177,19 @@ steps button {
 }
 
 /* cant make it bigger???? */
+/* media player includes title and video controls */
 .media-player {
   width: 485px;
   margin: 0 auto;
   padding: 20px 30px;
+  /* flex-grow: 2; */
 }
-
+/* just video */
 .media-player video {
   max-width: 100%;
 }
 
+/* pause/play fullscreen button and progress bar */
 .custom-controls {
   display: flex;
   justify-content: space-between;
