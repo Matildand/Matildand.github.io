@@ -40,10 +40,10 @@
       also seemed to be a reoccuring segment so i added a section where they would all be in one place -->
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Tutorials</a></li>
-        <li><a href="#">Art Hour</a></li>
-        <li><a href="#">Images</a></li>
+        <p><a href="#">Home</a></p>
+        <p><a href="#">Tutorials</a></p>
+        <p><a href="#">Art Hour</a></p>
+        <p><a href="#">Images</a></p>
       </ul>
     </nav>
 
@@ -132,26 +132,103 @@
         with each step, I felt like it would be a helpful thing to include as I kind of leaned into the writen instructions more,
         and the idea that the video is supplimentory -->
         <steps>
-          <button onclick="playFrom(28)">Step 1</button>
-          <button onclick="playFrom(41)">Step 2</button>
-          <button onclick="playFrom(50)">Step 3</button>
-          <button onclick="playFrom(62)">Step 4</button>
-          <button onclick="playFrom(70)">Step 5</button>
-          <button onclick="playFrom(80)">Step 6</button>
-          <button onclick="playFrom(94)">Step 7</button>
-          <button onclick="playFrom(120)">Step 8</button>
-          <button onclick="playFrom(128)">Step 9</button>
-          <button onclick="playFrom(130)">Step 10</button>
-          <button onclick="playFrom(143)">Step 11</button>
-          <button onclick="playFrom(156)">Step 12</button>
-          <button onclick="playFrom(167)">Step 13</button>
-          <button onclick="playFrom(177)">Step 14</button>
-          <button onclick="playFrom(182)">Step 15</button>
-          <button onclick="playFrom(192)">Step 16</button>
-          <button onclick="playFrom(204)">Step 17</button>
-          <button onclick="playFrom(215)">Step 18</button>
+          <button id="st1" onclick="playFrom(28)">Step 1</button>
+          <button id="st2" onclick="playFrom(41)">Step 2</button>
+          <button id="st3" onclick="playFrom(50)">Step 3</button>
+          <button id="st4" onclick="playFrom(62)">Step 4</button>
+          <button id="st5" onclick="playFrom(70)">Step 5</button>
+          <button id="st6" onclick="playFrom(80)">Step 6</button>
+          <button id="st7" onclick="playFrom(94)">Step 7</button>
+          <button id="st8" onclick="playFrom(120)">Step 8</button>
+          <button id="st9" onclick="playFrom(128)">Step 9</button>
+          <button id="st10" onclick="playFrom(130)">Step 10</button>
+          <button id="st11" onclick="playFrom(143)">Step 11</button>
+          <button id="st12" onclick="playFrom(156)">Step 12</button>
+          <button id="st13" onclick="playFrom(167)">Step 13</button>
+          <button id="st14" onclick="playFrom(177)">Step 14</button>
+          <button id="st15" onclick="playFrom(182)">Step 15</button>
+          <button id="st16" onclick="playFrom(192)">Step 16</button>
+          <button id="st17" onclick="playFrom(204)">Step 17</button>
+          <button id="st18" onclick="playFrom(215)">Step 18</button>
         </steps>
       </div>
+      <div id="caption">
+        <p id="textbox">Click on a step to see instructions!</p>
+        <p id="ch1">1. Layout your 12.5cm x 12.5cm foam sheet</p>
+        <p id="ch2">
+          Fold in half diagonally, unfold, then fold along the other diagonal to
+          create four triangle shaped sections.
+        </p>
+        <p id="ch3">
+          Using your hole punch, punch a hole In the centre of the square where
+          the two creases overlap
+        </p>
+        <p id="ch4">
+          Cut a slit halfway to the centre of the square along each of the
+          diagonal creases, so that the far edge of each of the triangles from
+          each other while still being connected at the centre.
+        </p>
+        <p id="ch5">
+          Punch a hole in the bottom left corner of the triangle facing you, and
+          rotate the foam sheet 90 degrees. Repeat on each side until they all
+          have a single hole.
+        </p>
+        <p id="ch6">
+          Stick a glue dot next to each of the holes you just punched, towards
+          the inside of the triangles
+        </p>
+        <p id="ch7">
+          Fold one dotted and glued corner into the centre so the two holes line
+          up, and press the glue dot down so it sticks to the centre corner of
+          its triangle section. Repeat for all four sides
+        </p>
+        <p id="ch8">
+          At this point, double check to ensure you are able to poke a pipe
+          cleaner through the tunnel you have created.
+        </p>
+        <p id="ch9">
+          Layout an off-cutting of your foam sheet in a different colour to your
+          windmill.
+        </p>
+        <p id="ch10">
+          Using a glue stick lid, press down like a cookie cutter onto the foam
+          sheet to make a circular impression.
+        </p>
+        <p id="ch11">
+          Use this impression as a guide to cut out a perfect circle, and punch
+          a hole in the centre. Repeat until you have two donut shaped foam
+          circles we will use as washers.
+        </p>
+        <p id="ch12">
+          Layout out a paper straw, a pipe cleaner, two donut shaped washers,
+          and your foam wheel.
+        </p>
+        <p id="ch13">
+          Wrap one end of the pipe cleaner around the straw 4 times about 15 cm
+          from the top, so it is securely attached.
+        </p>
+        <p id="ch14">
+          Thread one of the washers along the pipe cleaner so it sits flush
+          against the straw.
+        </p>
+        <p id="ch15">
+          Thread on your foam wheel ensuring that the flat side is not facing
+          out.
+        </p>
+        <p id="ch16">
+          Thread on the other washer to rest against the centre of the foam
+          wheel
+        </p>
+        <p id="ch17">
+          Cut off the excess pipe cleaner, making sure to leave about 15-20 cm
+          sticking out from the washer.
+        </p>
+        <p id="ch18">
+          Wrap the sticking out pipe cleaner around itself in a flat spiral to
+          ensure the washer cannot fall off
+        </p>
+      </div>
+
       <!-- Written Content Section -->
       <section id="content">
         <!-- I decided to write out a little introduction that i imagine would be included in a blog style post like this.
@@ -185,25 +262,23 @@
            quality of the resolution was very low. So the written intructions changed purpose to be the main content of the site,
            witht the video being supplimentory -->
           <h4>Materials</h4>
-          <ul class="instruction">
-            <li>
+          <div class="instruction">
+            <p>
               12.5cm x 12.5cm Foam sheets (& any off cuttings in a different
               colour)
-            </li>
-            <li>Glue dots</li>
-            <li>Paper straws</li>
-            <li>Pipe Cleaners</li>
-          </ul>
+            </p>
+            <p>Glue dots</p>
+            <p>Paper straws</p>
+            <p>Pipe Cleaners</p>
+          </div>
         </section>
         <section class="sectional">
           <h4>Tools</h4>
-          <ul class="instruction">
-            <li>Hole Puncher</li>
-            <li>Scissors</li>
-            <li>
-              Glue stick lid (or any round lid that can make an impression)
-            </li>
-          </ul>
+          <div class="instruction">
+            <p>Hole Puncher</p>
+            <p>Scissors</p>
+            <p>Glue stick lid (or any round lid that can make an impression)</p>
+          </div>
         </section>
         <section class="sectional">
           <h4>Method</h4>
@@ -211,115 +286,114 @@
            with the rest of the instructions -->
           <p id="indent" class="bold">Making the wheel</p>
           <!-- i used the ol element so the list would numerically order the steps -->
-          <ol>
-            <li>Layout your 12.5cm x 12.5cm foam sheet</li>
-            <li>
-              Fold in half diagonally, unfold, then fold along the other
-              diagonal to create four triangle shaped sections.
-            </li>
-            <li>
-              Using your hole punch, punch a hole In the centre of the square
-              where the two creases overlap
-            </li>
-            <li>
-              Cut a slit halfway to the centre of the square along each of the
-              diagonal creases, so that the far edge of each of the triangles
-              from each other while still being connected at the centre.
-            </li>
-            <li>
-              Punch a hole in the bottom left corner of the triangle facing you,
-              and rotate the foam sheet 90 degrees. Repeat on each side until
-              they all have a single hole.
-            </li>
-            <li>
-              Stick a glue dot next to each of the holes you just punched,
-              towards the inside of the triangles
-            </li>
-            <li>
-              Fold one dotted and glued corner into the centre so the two holes
-              line up, and press the glue dot down so it sticks to the centre
-              corner of its triangle section. Repeat for all four sides
-            </li>
-            <li>
-              At this point, double check to ensure you are able to poke a pipe
-              cleaner through the tunnel you have created.
-            </li>
-            <!-- I made sure the p element of the subtitles were inside the ol element to ensure 
+
+          <p>Layout your 12.5cm x 12.5cm foam sheet</p>
+          <p>
+            Fold in half diagonally, unfold, then fold along the other diagonal
+            to create four triangle shaped sections.
+          </p>
+          <p>
+            Using your hole punch, punch a hole In the centre of the square
+            where the two creases overlap
+          </p>
+          <p>
+            Cut a slit halfway to the centre of the square along each of the
+            diagonal creases, so that the far edge of each of the triangles from
+            each other while still being connected at the centre.
+          </p>
+          <p>
+            Punch a hole in the bottom left corner of the triangle facing you,
+            and rotate the foam sheet 90 degrees. Repeat on each side until they
+            all have a single hole.
+          </p>
+          <p>
+            Stick a glue dot next to each of the holes you just punched, towards
+            the inside of the triangles
+          </p>
+          <p>
+            Fold one dotted and glued corner into the centre so the two holes
+            line up, and press the glue dot down so it sticks to the centre
+            corner of its triangle section. Repeat for all four sides
+          </p>
+          <p>
+            At this point, double check to ensure you are able to poke a pipe
+            cleaner through the tunnel you have created.
+          </p>
+          <!-- I made sure the p element of the subtitles were inside the ol element to ensure 
            that the numbers continued despite the breaks, and didnt start back at 1 -->
-            <p class="bold">Making the Washers</p>
-            <li>
-              Layout an off-cutting of your foam sheet in a different colour to
-              your windmill.
-            </li>
-            <li>
-              Using a glue stick lid, press down like a cookie cutter onto the
-              foam sheet to make a circular impression.
-            </li>
-            <li>
-              Use this impression as a guide to cut out a perfect circle, and
-              punch a hole in the centre. Repeat until you have two donut shaped
-              foam circles we will use as washers.
-            </li>
-            <p class="bold">Putting it together</p>
-            <li>
-              Layout out a paper straw, a pipe cleaner, two donut shaped
-              washers, and your foam wheel.
-            </li>
-            <li>
-              Wrap one end of the pipe cleaner around the straw 4 times about 15
-              cm from the top, so it is securely attached.
-            </li>
-            <li>
-              Thread one of the washers along the pipe cleaner so it sits flush
-              against the straw.
-            </li>
-            <li>
-              Thread on your foam wheel ensuring that the flat side is not
-              facing out.
-            </li>
-            <li>
-              Thread on the other washer to rest against the centre of the foam
-              wheel
-            </li>
-            <li>
-              Cut off the excess pipe cleaner, making sure to leave about 15-20
-              cm sticking out from the washer.
-            </li>
-            <li>
-              Wrap the sticking out pipe cleaner around itself in a flat spiral
-              to ensure the washer cannot fall off
-            </li>
-          </ol>
+          <p class="bold">Making the Washers</p>
+          <p>
+            Layout an off-cutting of your foam sheet in a different colour to
+            your windmill.
+          </p>
+          <p>
+            Using a glue stick lid, press down like a cookie cutter onto the
+            foam sheet to make a circular impression.
+          </p>
+          <p>
+            Use this impression as a guide to cut out a perfect circle, and
+            punch a hole in the centre. Repeat until you have two donut shaped
+            foam circles we will use as washers.
+          </p>
+          <p class="bold">Putting it together</p>
+          <p>
+            Layout out a paper straw, a pipe cleaner, two donut shaped washers,
+            and your foam wheel.
+          </p>
+          <p>
+            Wrap one end of the pipe cleaner around the straw 4 times about 15
+            cm from the top, so it is securely attached.
+          </p>
+          <p>
+            Thread one of the washers along the pipe cleaner so it sits flush
+            against the straw.
+          </p>
+          <p>
+            Thread on your foam wheel ensuring that the flat side is not facing
+            out.
+          </p>
+          <p>
+            Thread on the other washer to rest against the centre of the foam
+            wheel
+          </p>
+          <p>
+            Cut off the excess pipe cleaner, making sure to leave about 15-20 cm
+            sticking out from the washer.
+          </p>
+          <p>
+            Wrap the sticking out pipe cleaner around itself in a flat spiral to
+            ensure the washer cannot fall off
+          </p>
+
           <!-- I added a where to buy section as I felt it was relevent in a blog post, especially since some of the materals
          seemed quite specific and hard to find. I used hyperlinks to link real websites to make it easy to find where people
          could buy them online -->
           <h4>Where to buy??</h4>
-          <ul>
-            <li>
-              <a
-                href="https://www.officeworks.com.au/shop/officeworks/p/kadink-a4-foam-sheets-assorted-8-pack-shkdcs24?region_id=GTYP3H&cm_mmc=Google%3ASEM%3AAlways_on%3AOW%7CAU+%7COffice%7COffice%7CNA%7CSEM%7CGoogle%7CPMax%7CNA%3Aoffbrd750125&s_kwcid=AL%2112073%213%21%21%21%21x%21%21&gad_source=1&gbraid=0AAAAAD1FgQbgoVAdEmuvspRYrNvfGUuvS&gclid=Cj0KCQjw5azABhD1ARIsAA0WFUEuj0qBHdEgqFttsuxazdm_nJnCS8xMidokbURBE5CM26C0THRrxfEaAoHtEALw_wcB&gclsrc=aw.ds&regionIdSet=true"
-                >Foam Sheets</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.officeworks.com.au/shop/officeworks/p/bostik-removeable-glu-dots-64-pack-bo30800951?region_id=GTYP3H&cm_mmc=Google%3ASEM%3AAlways_on%3AOW%7CAU+%7COffice%7COffice%7CNA%7CSEM%7CGoogle%7CPMax%7CNA%3Aoffbrd750125&s_kwcid=AL%2112073%213%21%21%21%21x%21%21&gad_source=1&gbraid=0AAAAAD1FgQbgoVAdEmuvspRYrNvfGUuvS&gclid=Cj0KCQjw5azABhD1ARIsAA0WFUEMIDSEKLM_uZj1YnAzxcyvUqUoVbGFKnYMHQAPP0ePCZCCh97vRn4aAsDCEALw_wcB&gclsrc=aw.ds&regionIdSet=true"
-                >Glue Dots</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.woolworths.com.au/shop/productdetails/698042?googleshop=true&store_code=woolworths_supermarkets_3110&utm_source=google&utm_medium=cpc&utm_campaign=WW-0001&cq_net=g&cq_src=GOOGLE&cq_cmp=Woolies_8458_BAU_ShopExp_Top_WW-0001&cq_med=71700000114609767&cq_plac=&cq_term=PRODUCT_GROUP&ds_adt=pla&cq_plt=gp&cq_gclid=Cj0KCQjw5azABhD1ARIsAA0WFUE2gz0k4UbMaUlqHVZPLVJr7jbk9ZDc74-MTnoD63Q0boOASyOTZTUaAuNdEALw_wcB&ds_de=c&ds_pc=local&ds_cr=673891769478&ds_tid=pla-1653305800541&ds_locphys=9071432&ds_pid=698042&cmpid=smsm:ds:GOOGLE:Woolies_8458_BAU_ShopExp_Top_WW-0001:PRODUCT_GROUP&gad_source=1&gbraid=0AAAAACoj6t7pBpCG71XM4QxMPWUc1_i4h&gclid=Cj0KCQjw5azABhD1ARIsAA0WFUE2gz0k4UbMaUlqHVZPLVJr7jbk9ZDc74-MTnoD63Q0boOASyOTZTUaAuNdEALw_wcB&gclsrc=aw.ds"
-                >Paper Straws</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.officeworks.com.au/shop/officeworks/p/kadink-chenille-stems-bright-70-pack-showk0157?region_id=GTYP3H&cm_mmc=Google%3ASEM%3AAlways_on%3AOW%7CAU+%7COffice%7COffice%7CNA%7CSEM%7CGoogle%7CPMax%7CNA%3Aoffbrd750125&s_kwcid=AL%2112073%213%21%21%21%21x%21%21&gad_source=1&gbraid=0AAAAAD1FgQbgoVAdEmuvspRYrNvfGUuvS&gclid=Cj0KCQjw5azABhD1ARIsAA0WFUENoOS8rcD-1iQ-Ni6zPh84FcU39qA_jN751rIJ_5Cx7lW-EDmOApMaArc2EALw_wcB&gclsrc=aw.ds&regionIdSet=true"
-                >Pipe Cleaners</a
-              >
-            </li>
-          </ul>
+
+          <p>
+            <a
+              href="https://www.officeworks.com.au/shop/officeworks/p/kadink-a4-foam-sheets-assorted-8-pack-shkdcs24?region_id=GTYP3H&cm_mmc=Google%3ASEM%3AAlways_on%3AOW%7CAU+%7COffice%7COffice%7CNA%7CSEM%7CGoogle%7CPMax%7CNA%3Aoffbrd750125&s_kwcid=AL%2112073%213%21%21%21%21x%21%21&gad_source=1&gbraid=0AAAAAD1FgQbgoVAdEmuvspRYrNvfGUuvS&gclid=Cj0KCQjw5azABhD1ARIsAA0WFUEuj0qBHdEgqFttsuxazdm_nJnCS8xMidokbURBE5CM26C0THRrxfEaAoHtEALw_wcB&gclsrc=aw.ds&regionIdSet=true"
+              >Foam Sheets</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://www.officeworks.com.au/shop/officeworks/p/bostik-removeable-glu-dots-64-pack-bo30800951?region_id=GTYP3H&cm_mmc=Google%3ASEM%3AAlways_on%3AOW%7CAU+%7COffice%7COffice%7CNA%7CSEM%7CGoogle%7CPMax%7CNA%3Aoffbrd750125&s_kwcid=AL%2112073%213%21%21%21%21x%21%21&gad_source=1&gbraid=0AAAAAD1FgQbgoVAdEmuvspRYrNvfGUuvS&gclid=Cj0KCQjw5azABhD1ARIsAA0WFUEMIDSEKLM_uZj1YnAzxcyvUqUoVbGFKnYMHQAPP0ePCZCCh97vRn4aAsDCEALw_wcB&gclsrc=aw.ds&regionIdSet=true"
+              >Glue Dots</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://www.woolworths.com.au/shop/productdetails/698042?googleshop=true&store_code=woolworths_supermarkets_3110&utm_source=google&utm_medium=cpc&utm_campaign=WW-0001&cq_net=g&cq_src=GOOGLE&cq_cmp=Woolies_8458_BAU_ShopExp_Top_WW-0001&cq_med=71700000114609767&cq_plac=&cq_term=PRODUCT_GROUP&ds_adt=pla&cq_plt=gp&cq_gclid=Cj0KCQjw5azABhD1ARIsAA0WFUE2gz0k4UbMaUlqHVZPLVJr7jbk9ZDc74-MTnoD63Q0boOASyOTZTUaAuNdEALw_wcB&ds_de=c&ds_pc=local&ds_cr=673891769478&ds_tid=pla-1653305800541&ds_locphys=9071432&ds_pid=698042&cmpid=smsm:ds:GOOGLE:Woolies_8458_BAU_ShopExp_Top_WW-0001:PRODUCT_GROUP&gad_source=1&gbraid=0AAAAACoj6t7pBpCG71XM4QxMPWUc1_i4h&gclid=Cj0KCQjw5azABhD1ARIsAA0WFUE2gz0k4UbMaUlqHVZPLVJr7jbk9ZDc74-MTnoD63Q0boOASyOTZTUaAuNdEALw_wcB&gclsrc=aw.ds"
+              >Paper Straws</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://www.officeworks.com.au/shop/officeworks/p/kadink-chenille-stems-bright-70-pack-showk0157?region_id=GTYP3H&cm_mmc=Google%3ASEM%3AAlways_on%3AOW%7CAU+%7COffice%7COffice%7CNA%7CSEM%7CGoogle%7CPMax%7CNA%3Aoffbrd750125&s_kwcid=AL%2112073%213%21%21%21%21x%21%21&gad_source=1&gbraid=0AAAAAD1FgQbgoVAdEmuvspRYrNvfGUuvS&gclid=Cj0KCQjw5azABhD1ARIsAA0WFUENoOS8rcD-1iQ-Ni6zPh84FcU39qA_jN751rIJ_5Cx7lW-EDmOApMaArc2EALw_wcB&gclsrc=aw.ds&regionIdSet=true"
+              >Pipe Cleaners</a
+            >
+          </p>
         </section>
         <!-- I added the print button because I felt like it would be helpful, especially when crafting with children 
          so you wouldnt have to do it super close to a computer and risk damaging it. -->

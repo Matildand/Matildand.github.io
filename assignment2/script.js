@@ -83,3 +83,185 @@ function topFunction() {
 //Full screen Button (move to ordered place)
 
 // Add other functionalities here
+
+const textBox = document.querySelector("#textbox");
+console.log(textBox);
+const st1 = document.querySelector("#st1");
+console.log(st1);
+const ch1 = document.querySelector("#ch1");
+console.log(ch1);
+st1.addEventListener("click", changeText);
+function changeText() {
+  const newText = document.getElementById("ch1").textContent;
+  document.getElementById("textbox").textContent = newText;
+}
+
+const st2 = document.querySelector("#st2");
+console.log(st2);
+const ch2 = document.querySelector("#ch2");
+console.log(ch2);
+st2.addEventListener("click", changeText2);
+function changeText2() {
+  const newText = document.getElementById("ch2").textContent;
+  document.getElementById("textbox").textContent = newText;
+}
+
+const st3 = document.querySelector("#st3");
+console.log(st3);
+const ch3 = document.querySelector("#ch3");
+console.log(ch3);
+st3.addEventListener("click", changeText3);
+function changeText3() {
+  const newText = document.getElementById("ch3").textContent;
+  document.getElementById("textbox").textContent = newText;
+}
+
+const st4 = document.querySelector("#st4");
+console.log(st4);
+const ch4 = document.querySelector("#ch4");
+console.log(ch4);
+st4.addEventListener("click", changeText4);
+function changeText4() {
+  const newText = document.getElementById("ch4").textContent;
+  document.getElementById("textbox").textContent = newText;
+}
+
+const st5 = document.querySelector("#st5");
+console.log(st5);
+const ch5 = document.querySelector("#ch5");
+console.log(ch5);
+st5.addEventListener("click", changeText5);
+function changeText5() {
+  const newText = document.getElementById("ch5").textContent;
+  document.getElementById("textbox").textContent = newText;
+}
+
+const st6 = document.querySelector("#st6");
+console.log(st6);
+const ch6 = document.querySelector("#ch6");
+console.log(ch6);
+st6.addEventListener("click", changeText6);
+function changeText6() {
+  const newText = document.getElementById("ch6").textContent;
+  document.getElementById("textbox").textContent = newText;
+}
+
+const st7 = document.querySelector("#st7");
+console.log(st7);
+const ch7 = document.querySelector("#ch7");
+console.log(ch7);
+st7.addEventListener("click", changeText7);
+function changeText7() {
+  const newText = document.getElementById("ch7").textContent;
+  document.getElementById("textbox").textContent = newText;
+}
+
+const st8 = document.querySelector("#st8");
+console.log(st8);
+const ch8 = document.querySelector("#ch8");
+console.log(ch8);
+st8.addEventListener("click", changeText8);
+function changeText8() {
+  const newText = document.getElementById("ch8").textContent;
+  document.getElementById("textbox").textContent = newText;
+}
+
+const st9 = document.querySelector("#st9");
+console.log(st9);
+const ch9 = document.querySelector("#ch9");
+console.log(ch9);
+st9.addEventListener("click", changeText9);
+function changeText9() {
+  const newText = document.getElementById("ch9").textContent;
+  document.getElementById("textbox").textContent = newText;
+}
+
+const st10 = document.querySelector("#st10");
+console.log(st10);
+const ch10 = document.querySelector("#ch10");
+console.log(ch10);
+st10.addEventListener("click", changeText10);
+function changeText10() {
+  const newText = document.getElementById("ch10").textContent;
+  document.getElementById("textbox").textContent = newText;
+}
+
+const st11 = document.querySelector("#st11");
+console.log(st11);
+const ch11 = document.querySelector("#ch11");
+console.log(ch11);
+st11.addEventListener("click", changeText11);
+function changeText11() {
+  const newText = document.getElementById("ch11").textContent;
+  document.getElementById("textbox").textContent = newText;
+}
+
+const st12 = document.querySelector("#st12");
+console.log(st12);
+const ch12 = document.querySelector("#ch12");
+console.log(ch12);
+st12.addEventListener("click", changeText12);
+function changeText12() {
+  const newText = document.getElementById("ch12").textContent;
+  document.getElementById("textbox").textContent = newText;
+}
+
+const st13 = document.querySelector("#st13");
+console.log(st13);
+const ch13 = document.querySelector("#ch13");
+console.log(ch13);
+st13.addEventListener("click", changeText13);
+function changeText13() {
+  const newText = document.getElementById("ch13").textContent;
+  document.getElementById("textbox").textContent = newText;
+}
+
+const st14 = document.querySelector("#st14");
+console.log(st14);
+const ch14 = document.querySelector("#ch14");
+console.log(ch14);
+st14.addEventListener("click", changeText14);
+function changeText14() {
+  const newText = document.getElementById("ch14").textContent;
+  document.getElementById("textbox").textContent = newText;
+}
+
+const st15 = document.querySelector("#st15");
+console.log(st15);
+const ch15 = document.querySelector("#ch15");
+console.log(ch15);
+st15.addEventListener("click", changeText15);
+function changeText15() {
+  const newText = document.getElementById("ch15").textContent;
+  document.getElementById("textbox").textContent = newText;
+}
+
+const st16 = document.querySelector("#st16");
+console.log(st16);
+const ch16 = document.querySelector("#ch16");
+console.log(ch16);
+st16.addEventListener("click", changeText16);
+function changeText16() {
+  const newText = document.getElementById("ch16").textContent;
+  document.getElementById("textbox").textContent = newText;
+}
+
+const st17 = document.querySelector("#st17");
+console.log(st17);
+const ch17 = document.querySelector("#ch17");
+console.log(ch17);
+st17.addEventListener("click", changeText17);
+function changeText17() {
+  const newText = document.getElementById("ch17").textContent;
+  document.getElementById("textbox").textContent = newText;
+}
+
+const st18 = document.querySelector("#st18");
+console.log(st18);
+const ch18 = document.querySelector("#ch18");
+console.log(ch18);
+st18.addEventListener("click", changeText18);
+function changeText18() {
+  const newText = document.getElementById("ch18").textContent;
+  document.getElementById("textbox").textContent = newText;
+}

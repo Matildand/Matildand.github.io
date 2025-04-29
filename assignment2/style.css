@@ -58,12 +58,11 @@ p {
 }
 
 /* Create a container for the main content */
-/* .container {
-  max-width: 1000px;
-  width: 800px;
+.container {
+  width: 1000px;
   padding: 10px;
   border: 5px;
-} */
+}
 
 /* Header styling */
 header {
@@ -106,7 +105,7 @@ nav a {
   /* I used a visual border to help me see what was happening when
   trying to use the grid display */
   border: 2px dashed #e5e5cb56;
-  width: 800px;
+  width: 1000px;
   min-height: 100;
   padding: 5px;
   /* used grid display so the image and the text/buttons could be next
@@ -242,11 +241,74 @@ ol {
   /* how do i make it so the second line is also indented */
 }
 
+#caption {
+  border: 5px solid #0c503f;
+  background-color: aliceblue;
+  color: black;
+  padding: 10px 25px;
+  margin: 20px;
+  border-radius: 25px;
+}
+#ch1 {
+  display: none;
+}
+#ch2 {
+  display: none;
+}
+#ch3 {
+  display: none;
+}
+#ch4 {
+  display: none;
+}
+#ch5 {
+  display: none;
+}
+#ch6 {
+  display: none;
+}
+#ch7 {
+  display: none;
+}
+#ch8 {
+  display: none;
+}
+#ch9 {
+  display: none;
+}
+#ch10 {
+  display: none;
+}
+#ch11 {
+  display: none;
+}
+#ch12 {
+  display: none;
+}
+#ch13 {
+  display: none;
+}
+#ch14 {
+  display: none;
+}
+#ch15 {
+  display: none;
+}
+#ch16 {
+  display: none;
+}
+#ch17 {
+  display: none;
+}
+#ch18 {
+  display: none;
+}
+
 #content {
   border: 5px solid #0c503f;
   background-color: #cff1eb;
   color: black;
-  padding: 10 25 10 25;
+  padding: 10px 25px;
 }
 
 .sectional {
