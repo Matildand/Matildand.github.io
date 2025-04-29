@@ -1,7 +1,7 @@
 /* Changed the colours the match the title screen in the provided craft video */
 :root {
   --primary-bg-color: #67978d;
-  --text-color: #0c503f;
+  --text-color: aliceblue;
   --accent-color: #925184;
   --main-bg-color: #0c503f;
   --main-text-color: #fff;
@@ -12,6 +12,13 @@ html {
   scroll-behavior: smooth;
 }
 
+body,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+}
 /* I added in the letter spacing to the title as I felt the font made it look
 too squished */
 h1 {
@@ -28,6 +35,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* justify-content: space-between; */
 }
 
 h2 {
@@ -47,14 +55,12 @@ h4 {
 p {
   padding-top: 5px;
   padding-bottom: 5px;
-  font-size: 1.2rem;
-  width: 100%;
 }
 
 /* Create a container for the main content */
 .container {
   max-width: 1000px;
-  width: 1000px;
+  width: 800px;
   padding: 10px;
   border: 5px;
 }
@@ -99,8 +105,8 @@ nav a {
 #covertitle {
   /* I used a visual border to help me see what was happening when
   trying to use the grid display */
-  border: 4px dashed #0c503f;
-  width: 1000px;
+  border: 2px dashed #e5e5cb56;
+  width: 800px;
   min-height: 100;
   padding: 5px;
   /* used grid display so the image and the text/buttons could be next
@@ -108,7 +114,6 @@ nav a {
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: #cff1eb;
 }
 
 /* wheel id for the image */
@@ -119,7 +124,7 @@ nav a {
 }
 /* Title styling */
 #title {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
 }
 /* container class for like/share buttons */
 .top-controls {
@@ -145,19 +150,6 @@ nav a {
   justify-content: center;
   width: 55px;
   height: 55px;
-}
-.intro {
-  border: 5px solid #0c503f;
-  background-color: #cff1eb;
-  width: 1000px;
-  color: black;
-  padding: 10px 25px;
-  margin: 20px;
-}
-.wide {
-  display: flex;
-  justify-content: space-between;
-  border: 2px solid;
 }
 
 /* Media player styling */
