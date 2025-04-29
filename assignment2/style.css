@@ -17,7 +17,7 @@ p,
 ul {
   margin: 0;
   padding: 0;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 /* I added in the letter spacing to the title as I felt the font made it look
 too squished */
@@ -31,7 +31,7 @@ body {
   font-style: normal;
   background-color: var(--primary-bg-color);
   color: var(--text-color);
-  line-height: 1.6;
+  line-height: 1.9;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,12 +58,12 @@ p {
 }
 
 /* Create a container for the main content */
-.container {
+/* .container {
   max-width: 1000px;
   width: 800px;
   padding: 10px;
   border: 5px;
-}
+} */
 
 /* Header styling */
 header {
