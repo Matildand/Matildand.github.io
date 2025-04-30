@@ -163,15 +163,18 @@ nav a {
   width: 55px;
   height: 55px;
 }
+/* makes the new button double the width while still keeping the rest of the button styling  */
 #btnwide {
   width: 110px;
   line-height: 1.4;
 }
 
+/* styling the tags on the cover */
 #tags {
   font-weight: bold;
 }
 
+/* formatting the introduction paragraph*/
 #intro {
   width: 900px;
   margin-top: 30px;
@@ -204,7 +207,6 @@ steps button {
   border-radius: 5px;
 }
 
-/* cant make it bigger???? */
 /* media player includes title and video controls */
 .media-player {
   width: 485px;
@@ -257,15 +259,19 @@ steps button {
   transition: width 0.3s ease;
 }
 
+/* bolds the subtitles for instructions */
 .bold {
   font-weight: bold;
 }
 
+/* container so they are able to be inline horizontally*/
 #box {
   display: flex;
   justify-content: space-around;
   margin: 10px;
 }
+
+/* instruction class is material, tool and where to buy boxes */
 .instruction {
   list-style: "-";
   text-indent: 25px;
@@ -276,12 +282,7 @@ steps button {
   padding-right: 30px;
 }
 
-ol {
-  text-indent: 25px;
-  font-size: 1rem;
-  /* how do i make it so the second line is also indented */
-}
-
+/* styling for step captions under video */
 #caption {
   border: 3px solid #0c503f;
   background-color: aliceblue;
@@ -291,6 +292,7 @@ ol {
   margin-top: 0px;
   border-radius: 25px;
 }
+/* line indents for each step */
 #ch1 {
   padding-left: 20px;
 }
@@ -346,6 +348,7 @@ ol {
   padding-left: 20px;
 }
 
+/* styling of the instruction box*/
 #content {
   border: 2px solid #0c503f;
   background-color: #cff1eb;
@@ -353,22 +356,24 @@ ol {
   padding: 10px 25px;
 }
 
+/* custom list indents, to make the gap between the number/dash 
+and the writing */
 .padded {
   text-indent: 10px;
   padding-right: 15px;
 }
+/* allows the second line of some steps to stay inline with the rest of the step */
 .indent {
   padding-left: 30px;
 }
 
+/* formatting for the instructions */
 .sectional {
   padding: 5px 10px 20px 10px;
 }
 
-#indent {
-  text-indent: 25px;
-}
-
+/* print class includes both the print button and the back to top button
+allowing them to be next to each other horizontally  */
 .print {
   display: flex;
   justify-content: space-between;

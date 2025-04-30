@@ -29,13 +29,15 @@ function shareAlert() {
   alert("Share this tutorial and craft with your friends!!");
 }
 
+// jump to instructions button.
 const jumpBtn = document.querySelector("#btnwide");
 console.log(jumpBtn);
 
 jumpBtn.addEventListener("click", tutFunction);
 
 function tutFunction() {
-  const target = document.querySelector(".media-player"); // selects first element with this class
+  //scrolls the page to the target element
+  const target = document.querySelector(".media-player");
   if (target) {
     target.scrollIntoView({ behavior: "smooth", block: "start" });
   }
@@ -92,7 +94,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-//Full screen Button (move to ordered place)
+//Full screen Button from week 8 examples
 const fullscreenButton = document.querySelector("#fullscreen");
 console.log(fullscreenButton);
 fullscreenButton.addEventListener("click", goFullscreen);
@@ -105,8 +107,7 @@ function goFullscreen() {
   }
 }
 
-// Add other functionalities here
-
+// code for caption box, repeated 18 times for each step button
 const textBox = document.querySelector("#textbox");
 console.log(textBox);
 const st1 = document.querySelector("#st1");
@@ -115,6 +116,7 @@ const ch1 = document.querySelector("#ch1");
 console.log(ch1);
 st1.addEventListener("click", changeText);
 function changeText() {
+  //by changing the text to the id i was able to only have the steps written out once in the html
   const newText = document.getElementById("ch1").textContent;
   document.getElementById("textbox").textContent = newText;
 }

@@ -82,6 +82,9 @@
               height="35"
             />
           </button>
+          <!-- with the inclusion of the introduction paragraph I felt it was necessary to add in 
+           a jump to tutorial button so users are able to conveniently access the video 
+           when opening the page -->
           <button id="btnwide">Jump to Tutorial</button>
         </div>
         <div id="tags">
@@ -96,7 +99,6 @@
     <div id="intro">
       <!-- I decided to write out a little introduction that i imagine would be included in a blog style post like this.
          This is kind of my take on the long waffeling introductions that cooking blogs often have before you make it to the actual recipe. -->
-
       <p>
         Welcome to Art hour with the Berry Bunch Family, this week we are going
         to be making the cutest handheld windmills; that actually work! They're
@@ -184,6 +186,8 @@
           <button id="st18" onclick="playFrom(215)">Step 18</button>
         </steps>
       </div>
+      <!-- caption box to display the corrolated step when chapter button is pressed 
+       so that the step and video are able to be seen at the same time -->
       <div id="caption">
         <p id="textbox">Click on a step to see instructions!</p>
       </div>
@@ -198,7 +202,8 @@
            quality of the resolution was very low. So the written intructions changed purpose to be the main content of the site,
            witht the video being supplimentory -->
           <h4>Materials</h4>
-
+          <!-- padded class so the dash has a bigger gap before the text starts, also used
+             in numbered steps -->
           <p><span class="padded">-</span>Foam sheets</p>
           <p><span class="padded">-</span>Glue dots</p>
           <p><span class="padded">-</span>Paper straws</p>
@@ -207,7 +212,6 @@
 
         <div class="instruction">
           <h4>Tools</h4>
-
           <p><span class="padded">-</span>Hole Puncher</p>
           <p><span class="padded">-</span>Scissors</p>
           <p><span class="padded">-</span>Glue stick lid (or any round lid)</p>
@@ -255,7 +259,7 @@
           <!-- I had to add an indent here where i didnt below because they're still inline
            with the rest of the instructions -->
           <p id="indent" class="bold">Making the wheel</p>
-          <!-- i used the ol element so the list would numerically order the steps -->
+          <!-- id'ed each step inividually for the caption box -->
           <p id="ch1">
             <span class="padded">1.</span> Layout your 12.5cm x 12.5cm foam
             sheet
@@ -274,6 +278,7 @@
             <span class="padded">4.</span> Cut a slit halfway to the centre of
             the square along each of the diagonal creases, so that the far edge
             of each of the
+            <!-- indent span so the second line is inline with the rest of the writing -->
             <span class="indent">
               triangles from each other while still being connected at the
               centre.</span
@@ -379,20 +384,37 @@
     <footer>
       <!-- made centred -->
       <p>&copy; 2024 Media Player Website. All rights reserved.</p>
-      <!-- Icon references for pause, play, like, unlike, and share -->
-      <a href="https://icons8.com/icon/59862/play">Play</a> icon by
-      <a href="https://icons8.com">Icons8</a>
-      <a href="https://icons8.com/icon/61012/pause">Pause</a> icon by
-      <a href="https://icons8.com">Icons8</a>
-      <a target="_blank" href="https://icons8.com/icon/37975/love">Love</a> icon
-      by
-      <a target="_blank" href="https://icons8.com">Icons8</a>
-      <a target="_blank" href="https://icons8.com/icon/87/heart">Heart</a> icon
-      by
-      <a target="_blank" href="https://icons8.com">Icons8</a>
-      <a target="_blank" href="https://icons8.com/icon/58564/share">Share</a>
-      icon by
-      <a target="_blank" href="https://icons8.com">Icons8</a>
+      <!-- Icon references for pause, play, like, unlike, fullscreen and share -->
+      <p>
+        <a href="https://icons8.com/icon/59862/play">Play</a> icon by
+        <a href="https://icons8.com">Icons8</a>
+      </p>
+      <p>
+        <a href="https://icons8.com/icon/61012/pause">Pause</a> icon by
+        <a href="https://icons8.com">Icons8</a>
+      </p>
+      <p>
+        <a target="_blank" href="https://icons8.com/icon/37975/love">Love</a>
+        icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      </p>
+      <p>
+        <a target="_blank" href="https://icons8.com/icon/87/heart">Heart</a>
+        icon by
+        <a target="_blank" href="https://icons8.com">Icons8</a>
+      </p>
+      <p>
+        <a target="_blank" href="https://icons8.com/icon/58564/share">Share</a>
+        icon by
+        <a target="_blank" href="https://icons8.com">Icons8</a>
+      </p>
+      <p>
+        <a
+          target="_blank"
+          href="https://icons8.com/icon/XYNsk0jtpmKn/full-screen"
+          >Full Screen</a
+        >
+        icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      </p>
     </footer>
   </body>
 </html>
