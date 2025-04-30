@@ -40,10 +40,10 @@
       also seemed to be a reoccuring segment so i added a section where they would all be in one place -->
     <nav>
       <ul>
-        <p><a href="#">Home</a></p>
-        <p><a href="#">Tutorials</a></p>
-        <p><a href="#">Art Hour</a></p>
-        <p><a href="#">Images</a></p>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Tutorials</a></li>
+        <li><a href="#">Art Hour</a></li>
+        <li><a href="#">Images</a></li>
       </ul>
     </nav>
 
@@ -62,7 +62,7 @@
         <!-- Interaction buttons -->
 
         <div class="top-controls">
-          <button id="like-btn" onclick="toggleLiked()">
+          <button id="like-btn" class="controls" onclick="toggleLiked()">
             <!-- I added a like button so that hypothetically users could see which tutorials were better received,
           to help make decisions on which ones to follow -->
             <img
@@ -75,7 +75,7 @@
           </button>
           <!-- I added a share button so users would be able to easily share the page with friends and social media, 
            helping the site grow through recommendations -->
-          <button id="share" onclick="shareAlert()">
+          <button id="share" class="controls" onclick="shareAlert()">
             <img
               src="https://img.icons8.com/ios-filled/50/share-3.png"
               alt="share icon"
@@ -83,6 +83,7 @@
               height="35"
             />
           </button>
+          <button id="btnwide"> Jump to Tutorial </button>
         </div>
         <hr />
         <!-- Tags -->
@@ -91,6 +92,32 @@
         <p>Skill level: Beginner</p>
       </div>
     </cover>
+    <div id="intro">
+      <!-- I decided to write out a little introduction that i imagine would be included in a blog style post like this.
+         This is kind of my take on the long waffeling introductions that cooking blogs often have before you make it to the actual recipe. -->
+        
+      <p>
+        Welcome to Art hour with the Berry Bunch Family, this week we are
+        going to be making the cutest handheld windmills; that actually work!
+        They're perfect for weekend afternoons or school holidays when you
+        just need something to do, and even once they're made the fun isn't
+        over yet as now you have a functional windmill to play with.
+      </p>
+      <p>
+        Here at Berry Bunch Family we know the importance of building fine
+        motor skills in children, the folding of the paper and the threading
+        on to the pipecleaner will help to refine those skills. This craft is
+        also perfect because it doesn't make a mess! There's no glitter or
+        sequins or glue to get everywhere, all the scrap paper can be used up
+        to make the washers and the glue dots make sticking a breeze.
+      </p>
+      <p>
+        We designed art hour to be simple beginner craft ideas that can all be
+        done within an hour with easily accessible materials. To check out our
+        other art hour tutorials, click on the Art Hour tab on the navigation
+        bar.
+      </p>
+    </div>
 
     <!-- Main Content all the way to the bottom -->
     <main class="container">
@@ -154,107 +181,12 @@
       </div>
       <div id="caption">
         <p id="textbox">Click on a step to see instructions!</p>
-        <p id="ch1">1. Layout your 12.5cm x 12.5cm foam sheet</p>
-        <p id="ch2">
-          Fold in half diagonally, unfold, then fold along the other diagonal to
-          create four triangle shaped sections.
-        </p>
-        <p id="ch3">
-          Using your hole punch, punch a hole In the centre of the square where
-          the two creases overlap
-        </p>
-        <p id="ch4">
-          Cut a slit halfway to the centre of the square along each of the
-          diagonal creases, so that the far edge of each of the triangles from
-          each other while still being connected at the centre.
-        </p>
-        <p id="ch5">
-          Punch a hole in the bottom left corner of the triangle facing you, and
-          rotate the foam sheet 90 degrees. Repeat on each side until they all
-          have a single hole.
-        </p>
-        <p id="ch6">
-          Stick a glue dot next to each of the holes you just punched, towards
-          the inside of the triangles
-        </p>
-        <p id="ch7">
-          Fold one dotted and glued corner into the centre so the two holes line
-          up, and press the glue dot down so it sticks to the centre corner of
-          its triangle section. Repeat for all four sides
-        </p>
-        <p id="ch8">
-          At this point, double check to ensure you are able to poke a pipe
-          cleaner through the tunnel you have created.
-        </p>
-        <p id="ch9">
-          Layout an off-cutting of your foam sheet in a different colour to your
-          windmill.
-        </p>
-        <p id="ch10">
-          Using a glue stick lid, press down like a cookie cutter onto the foam
-          sheet to make a circular impression.
-        </p>
-        <p id="ch11">
-          Use this impression as a guide to cut out a perfect circle, and punch
-          a hole in the centre. Repeat until you have two donut shaped foam
-          circles we will use as washers.
-        </p>
-        <p id="ch12">
-          Layout out a paper straw, a pipe cleaner, two donut shaped washers,
-          and your foam wheel.
-        </p>
-        <p id="ch13">
-          Wrap one end of the pipe cleaner around the straw 4 times about 15 cm
-          from the top, so it is securely attached.
-        </p>
-        <p id="ch14">
-          Thread one of the washers along the pipe cleaner so it sits flush
-          against the straw.
-        </p>
-        <p id="ch15">
-          Thread on your foam wheel ensuring that the flat side is not facing
-          out.
-        </p>
-        <p id="ch16">
-          Thread on the other washer to rest against the centre of the foam
-          wheel
-        </p>
-        <p id="ch17">
-          Cut off the excess pipe cleaner, making sure to leave about 15-20 cm
-          sticking out from the washer.
-        </p>
-        <p id="ch18">
-          Wrap the sticking out pipe cleaner around itself in a flat spiral to
-          ensure the washer cannot fall off
-        </p>
       </div>
 
       <!-- Written Content Section -->
       <section id="content">
         <!-- I decided to write out a little introduction that i imagine would be included in a blog style post like this.
          This is kind of my take on the long waffeling introductions that cooking blogs often have before you make it to the actual recipe. -->
-        <p>
-          Welcome to Art hour with the Berry Bunch Family, this week we are
-          going to be making the cutest handheld windmills; that actually work!
-          They're perfect for weekend afternoons or school holidays when you
-          just need something to do, and even once they're made the fun isn't
-          over yet as now you have a functional windmill to play with.
-        </p>
-        <p>
-          Here at Berry Bunch Family we know the importance of building fine
-          motor skills in children, the folding of the paper and the threading
-          on to the pipecleaner will help to refine those skills. This craft is
-          also perfect because it doesn't make a mess! There's no glitter or
-          sequins or glue to get everywhere, all the scrap paper can be used up
-          to make the washers and the glue dots make sticking a breeze.
-        </p>
-        <p>
-          We designed art hour to be simple beginner craft ideas that can all be
-          done within an hour with easily accessible materials. To check out our
-          other art hour tutorials, click on the Art Hour tab on the navigation
-          bar.
-        </p>
-        <p>Onto the written instructions:</p>
         <!-- I added a class here to seperate the formatting of the paragraphs above and the craft instructions-->
         <section class="sectional">
           <!-- I decided to write out the instructions as i felt like it was a logical type of content to feature on the site, 
@@ -286,84 +218,84 @@
            with the rest of the instructions -->
           <p id="indent" class="bold">Making the wheel</p>
           <!-- i used the ol element so the list would numerically order the steps -->
-
-          <p>Layout your 12.5cm x 12.5cm foam sheet</p>
-          <p>
-            Fold in half diagonally, unfold, then fold along the other diagonal
-            to create four triangle shaped sections.
+          <p id="ch1">1. Layout your 12.5cm x 12.5cm foam sheet</p>
+          <p id="ch2">
+            Fold in half diagonally, unfold, then fold along the other diagonal to
+            create four triangle shaped sections.
           </p>
-          <p>
-            Using your hole punch, punch a hole In the centre of the square
-            where the two creases overlap
+          <p id="ch3">
+            Using your hole punch, punch a hole In the centre of the square where
+            the two creases overlap
           </p>
-          <p>
+          <p id="ch4">
             Cut a slit halfway to the centre of the square along each of the
             diagonal creases, so that the far edge of each of the triangles from
             each other while still being connected at the centre.
           </p>
-          <p>
-            Punch a hole in the bottom left corner of the triangle facing you,
-            and rotate the foam sheet 90 degrees. Repeat on each side until they
-            all have a single hole.
+          <p id="ch5">
+            Punch a hole in the bottom left corner of the triangle facing you, and
+            rotate the foam sheet 90 degrees. Repeat on each side until they all
+            have a single hole.
           </p>
-          <p>
+          <p id="ch6">
             Stick a glue dot next to each of the holes you just punched, towards
             the inside of the triangles
           </p>
-          <p>
-            Fold one dotted and glued corner into the centre so the two holes
-            line up, and press the glue dot down so it sticks to the centre
-            corner of its triangle section. Repeat for all four sides
+          <p id="ch7">
+            Fold one dotted and glued corner into the centre so the two holes line
+            up, and press the glue dot down so it sticks to the centre corner of
+            its triangle section. Repeat for all four sides
           </p>
-          <p>
+          <p id="ch8">
             At this point, double check to ensure you are able to poke a pipe
             cleaner through the tunnel you have created.
           </p>
-          <!-- I made sure the p element of the subtitles were inside the ol element to ensure 
-           that the numbers continued despite the breaks, and didnt start back at 1 -->
-          <p class="bold">Making the Washers</p>
-          <p>
-            Layout an off-cutting of your foam sheet in a different colour to
-            your windmill.
+          <p class="bold"> Making the washers </p>
+          <p id="ch9">
+            Layout an off-cutting of your foam sheet in a different colour to your
+            windmill.
           </p>
-          <p>
-            Using a glue stick lid, press down like a cookie cutter onto the
-            foam sheet to make a circular impression.
+          <p id="ch10">
+            Using a glue stick lid, press down like a cookie cutter onto the foam
+            sheet to make a circular impression.
           </p>
-          <p>
-            Use this impression as a guide to cut out a perfect circle, and
-            punch a hole in the centre. Repeat until you have two donut shaped
-            foam circles we will use as washers.
+          <p id="ch11">
+            Use this impression as a guide to cut out a perfect circle, and punch
+            a hole in the centre. Repeat until you have two donut shaped foam
+            circles we will use as washers.
           </p>
-          <p class="bold">Putting it together</p>
-          <p>
+           <p class="bold">Putting it together</p>
+           <p id="ch12">
             Layout out a paper straw, a pipe cleaner, two donut shaped washers,
             and your foam wheel.
           </p>
-          <p>
-            Wrap one end of the pipe cleaner around the straw 4 times about 15
-            cm from the top, so it is securely attached.
+          <p id="ch13">
+            Wrap one end of the pipe cleaner around the straw 4 times about 15 cm
+            from the top, so it is securely attached.
           </p>
-          <p>
+          <p id="ch14">
             Thread one of the washers along the pipe cleaner so it sits flush
             against the straw.
           </p>
-          <p>
+          <p id="ch15">
             Thread on your foam wheel ensuring that the flat side is not facing
             out.
           </p>
-          <p>
+          <p id="ch16">
             Thread on the other washer to rest against the centre of the foam
             wheel
           </p>
-          <p>
+          <p id="ch17">
             Cut off the excess pipe cleaner, making sure to leave about 15-20 cm
             sticking out from the washer.
           </p>
-          <p>
+          <p id="ch18">
             Wrap the sticking out pipe cleaner around itself in a flat spiral to
             ensure the washer cannot fall off
           </p>
+        </div>
+          
+        
 
           <!-- I added a where to buy section as I felt it was relevent in a blog post, especially since some of the materals
          seemed quite specific and hard to find. I used hyperlinks to link real websites to make it easy to find where people
