@@ -29,6 +29,18 @@ function shareAlert() {
   alert("Share this tutorial and craft with your friends!!");
 }
 
+const jumpBtn = document.querySelector("#btnwide");
+console.log(jumpBtn);
+
+jumpBtn.addEventListener("click", tutFunction);
+
+function tutFunction() {
+  const target = document.querySelector(".media-player"); // selects first element with this class
+  if (target) {
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
 //Video player custom controls
 const video = document.querySelector("#custom-video-player");
 
@@ -81,6 +93,17 @@ function topFunction() {
 }
 
 //Full screen Button (move to ordered place)
+const fullscreenButton = document.querySelector("#fullscreen");
+console.log(fullscreenButton);
+fullscreenButton.addEventListener("click", goFullscreen);
+
+function goFullscreen() {
+  if (!document.fullscreenElement) {
+    video.requestFullscreen();
+  } else {
+    document.exitFullscreen();
+  }
+}
 
 // Add other functionalities here
 
