@@ -43,10 +43,28 @@ body {
   margin-left: 450px;
 }
 
+.layer2 {
+  width: 900px;
+  height: 550px;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid rgb(226, 13, 49);
+  position: relative;
+  z-index: 1;
+}
+#modelbox {
+  border: 2px solid rgb(226, 13, 49);
+  height: 500px;
+}
+
+.hanging {
+  border: 2px solid rgb(226, 13, 49);
+  width: 400px;
+}
 .row {
   border: 2px solid rgb(226, 13, 49);
   display: flex;
-  align-items: center;
+  align-items: top;
   gap: 10px;
 }
 
