@@ -17,7 +17,7 @@ body {
   border: 4px solid #8b093b;
   border-radius: 30px;
   width: 900px;
-  height: 600px;
+  height: 650px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -55,27 +55,101 @@ body {
 #modelbox {
   border: 2px solid rgb(226, 13, 49);
   height: 500px;
+  margin-left: 125px;
+  margin-top: 20px;
 }
-
+#girl {
+  border: 2px solid rgb(226, 13, 49);
+  position: absolute;
+}
+.dropcont {
+  border: 2px solid rgb(226, 13, 49);
+  width: 155px;
+  position: relative;
+}
+.droptop {
+  border: 2px solid rgb(226, 13, 49);
+  width: 155px;
+  min-height: 120px;
+  margin-top: 72px;
+}
+.droppant {
+  border: 2px solid rgb(226, 13, 49);
+  width: 155px;
+  min-height: 180px;
+}
 .hanging {
   border: 2px solid rgb(226, 13, 49);
   width: 400px;
+  justify-content: center;
 }
-.row {
+.toprow {
   border: 2px solid rgb(226, 13, 49);
   display: flex;
   align-items: top;
   gap: 10px;
+  margin: 10px;
+  margin-top: 43px;
+  margin-left: 35px;
+  width: 350px;
+}
+.legrow {
+  border: 2px solid rgb(226, 13, 49);
+  display: flex;
+  align-items: top;
+  gap: 10px;
+  margin: 10px;
+  margin-top: 43px;
+  margin-left: 20px;
+  width: 350px;
 }
 
-.square {
+#sing {
   border: 2px solid rgb(226, 13, 49);
+  margin: 3px;
+  min-height: 50px;
+  width: 80px;
+}
+
+#shirt {
+  border: 2px solid rgb(226, 13, 49);
+  margin: 3px;
+  min-height: 50px;
+  width: 120px;
+}
+
+#should {
+  border: 2px solid rgb(226, 13, 49);
+  margin: 3px;
+  min-height: 50px;
+  width: 150px;
+}
+
+#skirt {
+  border: 2px solid rgb(226, 13, 49);
+  margin: 3px;
+  min-height: 50px;
+  width: 100px;
+}
+
+#short {
+  border: 2px solid rgb(226, 13, 49);
+  margin: 3px;
+  min-height: 50px;
+  width: 100px;
+}
+
+#pant {
+  border: 2px solid rgb(226, 13, 49);
+  margin: 3px;
+  min-height: 50px;
+  width: 100px;
 }
 
 .bottom-left {
   border: 2px solid rgb(226, 13, 49);
-  bottom: 20px;
-  left: 20px;
+  margin-left: 150px;
+  margin-top: 5px;
 }
 
 .small-boxes {
@@ -115,4 +189,8 @@ body {
   width: 100px;
   height: 20px;
   background: #f0f0f0;
+}
+
+.selected {
+  display: none;
 }
