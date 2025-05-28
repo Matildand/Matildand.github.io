@@ -24,27 +24,27 @@ const myTops = [
   { id: 3, name: "Shoulder", src: "Glong.png", styleid: "should" },
 ];
 
-function populate() {
-  const topContainer = document.querySelector(".toprow");
-  let newContent = "";
-  for (let i = 0; i < myTops.length; i++) {
-    newContent += `
-  
-              <div id="${myTops[i].styleid}" draggable="true">
-                <img
-                  class="top"
-                  id="${myTops[i].name}"
-                  src="${myTops[i].src}"
-                  alt="${myTops[i].name}"
-                  width="75px"
-                />
-              </div>
-             
- `;
-  }
-  topContainer.innerHTML = newContent;
-}
-populate();
+// function populate() {
+//   const topContainer = document.querySelector(".toprow");
+//   let newContent = "";
+//   for (let i = 0; i < myTops.length; i++) {
+//     newContent += `
+
+//               <div id="${myTops[i].styleid}" draggable="true">
+//                 <img
+//                   class="top"
+//                   id="${myTops[i].name}"
+//                   src="${myTops[i].src}"
+//                   alt="${myTops[i].name}"
+//                   width="75px"
+//                 />
+//               </div>
+
+//  `;
+//   }
+//   topContainer.innerHTML = newContent;
+// }
+// populate();
 const tops = document.querySelectorAll(".top");
 console.log(tops);
 
@@ -107,4 +107,56 @@ dropBoxL.addEventListener("drop", function () {
     const cloneL = draggedLegs;
     dropBoxL.appendChild(cloneL);
   }
+});
+
+const skin1 = document.querySelector("#mini-box1");
+console.log(skin1);
+
+skin1.addEventListener("click", function () {
+  document.getElementById("girl").src = "1Model.png";
+});
+
+const skin2 = document.querySelector("#mini-box2");
+console.log(skin2);
+
+skin2.addEventListener("click", function () {
+  document.getElementById("girl").src = "2Model.png";
+});
+
+const skin3 = document.querySelector("#mini-box3");
+console.log(skin2);
+
+skin3.addEventListener("click", function () {
+  document.getElementById("girl").src = "3Model.png";
+});
+
+const skin4 = document.querySelector("#mini-box4");
+console.log(skin4);
+
+skin4.addEventListener("click", function () {
+  document.getElementById("girl").src = "4Model.png";
+});
+
+const singletC = document.querySelector("#singlet");
+console.log(singletC);
+const singletList = [
+  "WSinglet.png",
+  "PSinglet.png",
+  "BSinglet.png",
+  "GSinglet.png",
+];
+let currentIndex = 0;
+
+singletC.addEventListener("click", function () {
+  currentIndex = (currentIndex + 1) % singletList.length;
+  singletC.src = singletList[currentIndex];
+});
+
+const tShirtC = document.querySelector("#tshirt");
+console.log(singletC);
+const tShirtList = ["PTshirt.png", "BTshirt.png", "GTshirt.png", "WTshirt.png"];
+
+tShirtC.addEventListener("click", function () {
+  currentIndex = (currentIndex + 1) % tShirtList.length;
+  tShirtC.src = tShirtList[currentIndex];
 });

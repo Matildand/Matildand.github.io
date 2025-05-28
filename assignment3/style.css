@@ -55,22 +55,27 @@ body {
 #modelbox {
   border: 2px solid rgb(226, 13, 49);
   height: 500px;
-  margin-left: 125px;
+  margin-left: 120px;
   margin-top: 20px;
+  position: absolute;
 }
 #girl {
   border: 2px solid rgb(226, 13, 49);
-  position: absolute;
 }
 .dropcont {
   border: 2px solid rgb(226, 13, 49);
+  height: 500px;
+  margin-left: 118px;
+  margin-top: 20px;
   width: 155px;
   position: relative;
 }
 .droptop {
   border: 2px solid rgb(226, 13, 49);
   width: 155px;
-  min-height: 120px;
+  margin-right: 2px;
+  margin-left: 3px;
+  height: 100px;
   margin-top: 72px;
 }
 .droppant {
@@ -87,17 +92,16 @@ body {
   border: 2px solid rgb(226, 13, 49);
   display: flex;
   align-items: top;
-  gap: 10px;
   margin: 10px;
   margin-top: 43px;
-  margin-left: 35px;
-  width: 350px;
+  margin-left: 17px;
+  width: 375px;
+  height: 160px;
 }
 .legrow {
   border: 2px solid rgb(226, 13, 49);
   display: flex;
   align-items: top;
-  gap: 10px;
   margin: 10px;
   margin-top: 43px;
   margin-left: 20px;
@@ -106,44 +110,38 @@ body {
 
 #sing {
   border: 2px solid rgb(226, 13, 49);
-  margin: 3px;
   min-height: 50px;
-  width: 80px;
+  width: 150px;
 }
 
 #shirt {
   border: 2px solid rgb(226, 13, 49);
-  margin: 3px;
   min-height: 50px;
-  width: 120px;
+  width: 150px;
 }
 
 #should {
   border: 2px solid rgb(226, 13, 49);
-  margin: 3px;
   min-height: 50px;
   width: 150px;
 }
 
 #skirt {
   border: 2px solid rgb(226, 13, 49);
-  margin: 3px;
   min-height: 50px;
-  width: 100px;
+  width: 150px;
 }
 
 #short {
   border: 2px solid rgb(226, 13, 49);
-  margin: 3px;
   min-height: 50px;
-  width: 100px;
+  width: 150px;
 }
 
 #pant {
   border: 2px solid rgb(226, 13, 49);
-  margin: 3px;
   min-height: 50px;
-  width: 100px;
+  width: 150px;
 }
 
 .bottom-left {
@@ -164,24 +162,28 @@ body {
   width: 20px;
   height: 20px;
   background: #eec3af;
+  cursor: pointer;
 }
 #mini-box2 {
   border: 2px solid rgb(226, 13, 49);
   width: 20px;
   height: 20px;
   background: #cb896d;
+  cursor: pointer;
 }
 #mini-box3 {
   border: 2px solid rgb(226, 13, 49);
   width: 20px;
   height: 20px;
   background: #93644a;
+  cursor: pointer;
 }
 #mini-box4 {
   border: 2px solid rgb(226, 13, 49);
   width: 20px;
   height: 20px;
   background: #85482c;
+  cursor: pointer;
 }
 
 .bottom-bar {
