@@ -1,6 +1,14 @@
 body {
-  font-family: "Georgia", serif;
-  background: #e4a1ba;
+  font-family: "Kavoon", serif;
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: 2px;
+  background-color: #e4a1ba;
+  opacity: 1;
+  background-image: radial-gradient(#c9678d 2px, transparent 2px),
+    radial-gradient(#c9678d 2px, #e4a1ba 2px);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
   text-align: center;
 }
 
@@ -17,7 +25,7 @@ body {
   border: 4px solid #8b093b;
   border-radius: 30px;
   width: 900px;
-  height: 650px;
+  height: 670px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -150,8 +158,8 @@ body {
 
 .bottom-left {
   /* border: 2px solid rgb(226, 13, 49); */
-  margin-left: 130px;
-  margin-top: 5px;
+  margin-left: 140px;
+  margin-top: 20px;
 }
 
 .small-boxes {
@@ -162,38 +170,47 @@ body {
 }
 
 #mini-box1 {
-  border: 2px solid #b88f7c;
-  width: 30px;
-  height: 30px;
+  border: 3px solid #b88f7c;
+  width: 25px;
+  height: 25px;
   background: #eec3af;
   cursor: pointer;
 }
 #mini-box2 {
-  border: 2px solid #97634d;
-  width: 30px;
-  height: 30px;
+  border: 3px solid #97634d;
+  width: 25px;
+  height: 25px;
   background: #cb896d;
   cursor: pointer;
 }
 #mini-box3 {
-  border: 2px solid #684533;
-  width: 30px;
-  height: 30px;
+  border: 3px solid #684533;
+  width: 25px;
+  height: 25px;
   background: #93644a;
   cursor: pointer;
 }
 #mini-box4 {
-  border: 2px solid #68361f;
-  width: 30px;
-  height: 30px;
+  border: 3px solid #68361f;
+  width: 25px;
+  height: 25px;
   background: #85482c;
   cursor: pointer;
 }
 
 .bottom-bar {
-  border: 2px solid #8b093b;
-  width: 135px;
+  border: 2px solid #6e0930;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #6e0930;
+  width: 115px;
   height: 25px;
   background: #e4a1ba;
   cursor: pointer;
+  box-shadow: 1px 4px #94707b;
+}
+.bottom-bar:active {
+  background-color: #cc859f;
+  box-shadow: 1px 1px #94707b;
+  transform: translateY(3px);
 }

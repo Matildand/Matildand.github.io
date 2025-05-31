@@ -320,3 +320,12 @@ cargoC.addEventListener("click", function () {
   currentIndex = (currentIndex + 1) % cargoList.length;
   cargoC.src = cargoList[currentIndex];
 });
+
+const reset = document.querySelector(".bottom-bar");
+console.log(reset);
+reset.addEventListener("click", function () {
+  dropBoxT.innerHTML = "";
+  dropBoxL.innerHTML = "";
+  draggedTops.style.display = "block";
+  draggedLegs.style.display = "block";
+});
