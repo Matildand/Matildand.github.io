@@ -2,7 +2,12 @@ body {
   font-family: "Kavoon", serif;
   font-weight: 100;
   font-style: normal;
+  /* I increased the letter spacing for the heading as ifelt the font was a little hard to read initially  */
   letter-spacing: 2px;
+  /* I used MagicPattern (https://www.magicpattern.design/tools/css-backgrounds) , a CSS background pattern creator made by d_rapris which gave me the code
+  to add in to my css */
+  /* I felt like the plain pink background was too boring, especially since the game is confined to a smaller window inside the page, there was a lot of background 
+  space thatw asnt being used */
   background-color: #e4a1ba;
   opacity: 1;
   background-image: radial-gradient(#c9678d 2px, transparent 2px),
@@ -15,37 +20,135 @@ body {
 .title {
   font-size: 40px;
   font-weight: bold;
+  /* I added in a large margin around the title to space it a bit better on the page and also make it a bit more legible for users as its not squished up into 
+  the search bar, or into the border of the conatiner */
   margin: 20px;
   color: #6e0930;
 }
 
 .container {
   margin: 0 auto;
+  /* I reuse varients of these two pink colours through the styling of this site, as I felt it emulated this feminine cutesy style that is often utilised in dress up games
+  in an attempt to target a female audience */
   background: #f5ccdc;
   border: 4px solid #8b093b;
   border-radius: 30px;
   width: 900px;
   height: 670px;
+  /* Styling to help manage formatting properties of all internal objects */
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 20px;
-  box-sizing: border-box;
+}
+
+/* the styling of the instructions panel */
+.instructions {
+  position: absolute;
+  /* because this object is inside the container, to make it fill the space completely its 100% width and height */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* slight less of a radius to  ensure that there are no gaps */
+  border-radius: 25px;
+  background: rgba(143, 56, 82, 0.85);
+  color: #ffd4e4;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  /* to make it sit above the rest of the content */
+  z-index: 5;
+}
+
+/* left column to be able to add in relevant images to visually signal each interaction */
+#left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 240px;
+}
+/* styling for each image to ensure they are inline with the corresponding instruction */
+#tones_img {
+  margin-top: 180px;
+}
+#colour_img {
+  margin-top: 60px;
+}
+/* central column containing the words and the button */
+#words {
+  padding-top: 30px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+/* right column, same function as left */
+#right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 250px;
+}
+#drag_img {
+  margin-top: 210px;
+}
+#reset_img {
+  margin-top: 110px;
+}
+
+#heading {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+p {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+/* spans added white text onto the key words of the interactions */
+span {
+  color: white;
+}
+
+#playbutton {
+  border: 3px solid #6e0930;
+  margin-top: 40px;
+  font-size: 20px;
+  padding-top: 6px;
+  letter-spacing: 1px;
+  color: #6e0930;
+  width: 220px;
+  height: 40px;
+  background: #e4a1ba;
+  /* added a cursor pointer to polish the interactable objects */
+  cursor: pointer;
+  /* added a box shadow and active styling to add a more tactile nature to the play button, enhancing the experience */
+  box-shadow: 1px 4px #8d3550;
+}
+#playbutton:active {
+  background-color: #cc859f;
+  box-shadow: 1px 1px #8d3550;
+  transform: translateY(3px);
 }
 
 .model {
+  /* All of the styling for the classes and ids include a commented out red border, i used these while formatting the site as i visual guide to help me 
+  with margins as well troubleshooting when i couldnt tell why something wasnt moving the way iwas anticipating. */
   /* border: 2px solid rgb(226, 13, 49); */
   display: flex;
   flex-direction: column;
-  gap: 20px;
   width: 400px;
+  /* Means i was able to stack the layer 2 on top of the background images */
   position: absolute;
 }
 
 .clothes-column {
   /* border: 2px solid rgb(226, 13, 49); */
-  gap: 20px;
   width: 400px;
   position: absolute;
   margin-left: 450px;
@@ -58,6 +161,7 @@ body {
   justify-content: space-between;
   /* border: 2px solid rgb(226, 13, 49); */
   position: relative;
+  /* Controls the stacking positions of the layers, putting the model and then clothes above the background */
   z-index: 1;
 }
 #modelbox {
@@ -65,17 +169,20 @@ body {
   height: 500px;
   margin-left: 140px;
   margin-top: 20px;
+  /* Allows the drop zones to be layered above the model image */
   position: absolute;
 }
 
 .dropcont {
   /* border: 2px solid rgb(226, 13, 49); */
   height: 500px;
+  /* the positioning of the margins is very specific to ensure that both the tops and the bottoms line up witht the model individually */
   margin-left: 138px;
   margin-top: 20px;
   width: 155px;
   position: relative;
 }
+/* seperate containers for tops and bottoms so they get dropped inot the correct section */
 .droptop {
   /* border: 2px solid rgb(226, 13, 49); */
   width: 155px;
@@ -89,6 +196,7 @@ body {
   width: 155px;
   min-height: 180px;
 }
+
 .hanging {
   /* border: 2px solid rgb(226, 13, 49); */
   width: 400px;
@@ -96,7 +204,10 @@ body {
 }
 .toprow {
   /* border: 2px solid rgb(226, 13, 49); */
+  /* so that they sit in a row */
   display: flex;
+  flex-direction: row;
+  /* has all the items pushed to the top of the container, to emulate them hanging on a rack */
   align-items: top;
   margin: 10px;
   margin-top: 50px;
@@ -107,12 +218,14 @@ body {
 .legrow {
   /* border: 2px solid rgb(226, 13, 49); */
   display: flex;
+  flex-direction: row;
   align-items: top;
   margin: 10px;
   margin-top: 40px;
   margin-left: 20px;
   width: 350px;
 }
+/* pointer cursor so users are aware of what is intereactable */
 .top {
   cursor: pointer;
 }
@@ -120,37 +233,13 @@ body {
   cursor: pointer;
 }
 
-#sing {
+/* image containers for clothes so when the clothing item is on the model, the rest of the row doesnt move to fill the space.  */
+.topcont {
   /* border: 2px solid rgb(226, 13, 49); */
   min-height: 50px;
   width: 150px;
 }
-
-#shirt {
-  /* border: 2px solid rgb(226, 13, 49); */
-  min-height: 50px;
-  width: 150px;
-}
-
-#should {
-  /* border: 2px solid rgb(226, 13, 49); */
-  min-height: 50px;
-  width: 150px;
-}
-
-#skirt {
-  /* border: 2px solid rgb(226, 13, 49); */
-  min-height: 50px;
-  width: 150px;
-}
-
-#short {
-  /* border: 2px solid rgb(226, 13, 49); */
-  min-height: 50px;
-  width: 150px;
-}
-
-#pant {
+.legcont {
   /* border: 2px solid rgb(226, 13, 49); */
   min-height: 50px;
   width: 150px;
@@ -165,6 +254,7 @@ body {
 .small-boxes {
   /* border: 2px solid rgb(226, 13, 49); */
   display: flex;
+  flex-direction: row;
   gap: 5px;
   margin-bottom: 5px;
 }
@@ -173,6 +263,7 @@ body {
   border: 3px solid #b88f7c;
   width: 25px;
   height: 25px;
+  /* colour of the square the same colour as the skin tone on the model img it switches to */
   background: #eec3af;
   cursor: pointer;
 }
@@ -207,8 +298,12 @@ body {
   height: 25px;
   background: #e4a1ba;
   cursor: pointer;
+  /* added in a shadow as i felt the button by itself was visually interesting enough */
   box-shadow: 1px 4px #94707b;
 }
+/* i felt it was necessary to add a small change on the button on click so users would be able to tell the button was functional even 
+if they try to press it when there are no clothes on the model to reset. */
+/* i found that without this, the button felt broken and it was hard to tell if it was working so it was necesasry to add in this tactile function */
 .bottom-bar:active {
   background-color: #cc859f;
   box-shadow: 1px 1px #94707b;

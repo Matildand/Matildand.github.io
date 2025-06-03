@@ -3,120 +3,190 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Adding in a google font that i felt was playful enough for a game. The block colour that comes with having the font bolded i think ties in with the colourblocked 
+    style of the art style, making the page look cohesive.  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap"
       rel="stylesheet"
     />
+    <!-- Page title to match name of the game -->
     <title>Fashion Frenzy</title>
+    <!-- links to style sheets and scripts -->
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <body>
-      <h1 class="title">Fashion Frenzy</h1>
-      <div class="container">
-        <div class="model">
-          <img src="Model.png" alt="background" />
-        </div>
-
-        <div class="clothes-column">
-          <img src="ClothesRack.png" alt="background" />
-        </div>
-        <section class="layer2">
-          <div id="modelbox">
-            <img id="girl" src="1Model.png" alt="model" height="500px" />
-          </div>
-          <div class="dropcont">
-            <div class="droptop"></div>
-            <div class="droppant"></div>
-          </div>
-          <div class="hanging">
-            <div class="toprow">
-              <div id="sing">
-                <img
-                  class="top"
-                  data-id="1"
-                  id="singlet"
-                  src="WSinglet.png"
-                  alt="singlet"
-                  width="115px"
-                  draggable="true"
-                />
-              </div>
-              <div id="shirt">
-                <img
-                  class="top"
-                  data-id="2"
-                  id="tshirt"
-                  src="PTshirt.png"
-                  alt="tshirt"
-                  width="115px"
-                  draggable="true"
-                />
-              </div>
-              <div id="should">
-                <img
-                  class="top"
-                  data-id="3"
-                  id="long"
-                  src="GLong.png"
-                  alt="long sleeve"
-                  width="115px"
-                  draggable="true"
-                />
-              </div>
-            </div>
-            <div class="legrow">
-              <div id="skirt">
-                <img
-                  class="leg"
-                  data-id="4"
-                  id="mini"
-                  src="PSkirt.png"
-                  alt="skirt"
-                  width="100px"
-                  draggable="true"
-                />
-              </div>
-              <div id="short">
-                <img
-                  class="leg"
-                  id="shorts"
-                  data-id="5"
-                  src="BlShort.png"
-                  alt="short"
-                  width="100px"
-                  draggable="true"
-                />
-              </div>
-              <div id="pant">
-                <img
-                  class="leg"
-                  id="cargo"
-                  data-id="6"
-                  src="BPants.png"
-                  alt="pants"
-                  width="100px"
-                  draggable="true"
-                />
-              </div>
-            </div>
-          </div>
+    <!-- I changed my title quite far into the process as i felt the name 'fashion first' had a bit too much room for misinterpretaion. 
+     i knew i wated to have alliteration though with two Fs so i landed on frenzy. -->
+    <h1 class="title">Fashion Frenzy</h1>
+    <!-- container to hold the game inside. By having a container with set dimenstions means that the website is easily transferable across window sizes
+     as only the background would expand/contract -->
+    <div class="container">
+      <!-- I added an intruction panel at the start because i felt like some of the interactions like the colour change might 
+       not be clear that it is possible to intereact with. -->
+      <!-- also I chose ti have it overlap with the game as i felt once a user is made aware of the all the intereactions they can do the actual
+        act of doing them is pretty intuative and clear so its unecessary to have it visible the whole time -->
+      <div class="instructions">
+        <!-- section for the informational images on the left -->
+        <section id="left">
+          <img id="tones_img" src="tone.png" alt="skin tones" width="190px" />
+          <img
+            id="colour_img"
+            src="colour.png"
+            alt="colour change"
+            width="100px"
+          />
         </section>
-
-        <div class="bottom-left">
-          <div class="small-boxes">
-            <div id="mini-box1"></div>
-            <div id="mini-box2"></div>
-            <div id="mini-box3"></div>
-            <div id="mini-box4"></div>
-          </div>
-          <div class="bottom-bar">Reset</div>
-        </div>
+        <!-- intruction section -->
+        <section id="words">
+          <p id="heading">Welcome to Fashion Frenzy!</p>
+          <p>
+            <span>Click</span> on the palette at the bottom to change the skin
+            tone
+          </p>
+          <p><span>Drag</span> the clothes onto the model</p>
+          <p>
+            <span>Click</span> each item to see more colours and try different
+            combinations
+          </p>
+          <p>
+            <span>Click</span> the reset button at the bottom to clear your
+            outfit and start again!
+          </p>
+          <div id="playbutton">Let's Go!</div>
+        </section>
+        <!-- section for the informational images on the right -->
+        <section id="right">
+          <img id="drag_img" src="drag.png" alt="drag img" width="110px" />
+          <img
+            id="reset_img"
+            src="reset.png"
+            alt="reset button"
+            width="170px"
+          />
+        </section>
       </div>
-    </body>
+      <!-- I added two div containers holding the background images for both the model and the clothing rack. I wanted to use images here so i could add more details
+       to the backgrounds like the drop shadow under the model and the clothing racks above the items. I think these additions help make the site look 
+       more filled out and visually interesting. -->
+      <div class="model">
+        <img src="Model.png" alt="background" />
+      </div>
+      <div class="clothes-column">
+        <img src="ClothesRack.png" alt="background" />
+      </div>
+      <!-- Created new section to be able to layer this formatting on top of the background images -->
+      <section class="layer2">
+        <!-- contains the images of the model -->
+        <div id="modelbox">
+          <!-- the id = girl here is linked to javascript, so the actual image itself is what changes on the click rather than the container box. 
+           i found this was better for styling purposes -->
+          <img id="girl" src="1Model.png" alt="model" height="500px" />
+        </div>
+        <!-- All of the drop zone containers allowing the clothes to appear to be placed onto the model. -->
+        <div class="dropcont">
+          <div class="droptop"></div>
+          <div class="droppant"></div>
+        </div>
+        <!-- Container for the clothing items. Every div in this section has its own class or id for styling purposes, 
+         to ensure that the formatting worked correctly especially after javascript interactions. -->
+        <div class="hanging">
+          <div class="toprow">
+            <!-- Image container, means that whwen the item is applyed from the list onto the model, the other items stay in the same place. -->
+            <div class="topcont">
+              <!-- Applicable to all img in the hanging class - class = top is connected to the javascript and includes all images of shirts, data-id also connects to javascript, id is for styling, 
+               having a set width ensures that when the image is changed it remains the same size ratio enahncing the colour change effect, 
+               and draggable = true allows the images to be dragged which is necessary for the function of the game. -->
+              <img
+                class="top"
+                data-id="1"
+                id="singlet"
+                src="WSinglet.png"
+                alt="singlet"
+                width="115px"
+                draggable="true"
+              />
+            </div>
+            <div class="topcont">
+              <img
+                class="top"
+                data-id="2"
+                id="tshirt"
+                src="PTshirt.png"
+                alt="tshirt"
+                width="115px"
+                draggable="true"
+              />
+            </div>
+            <div class="topcont">
+              <!-- All the tops have the same set width to ensure that they fit the model they have the same dimensions around them, just filled with transparent material
+               this is also why the off the shoulder top appears lower down than the rest as the top of the image is the same height as the top of the singlet image -->
+              <img
+                class="top"
+                data-id="3"
+                id="long"
+                src="GLong.png"
+                alt="long sleeve"
+                width="115px"
+                draggable="true"
+              />
+            </div>
+          </div>
+          <div class="legrow">
+            <!-- All of the legs have the same width to ensure that they all fit the model when applied. -->
+            <div class="legcont">
+              <img
+                class="leg"
+                data-id="4"
+                id="mini"
+                src="PSkirt.png"
+                alt="skirt"
+                width="100px"
+                draggable="true"
+              />
+            </div>
+            <div class="legcont">
+              <img
+                class="leg"
+                id="shorts"
+                data-id="5"
+                src="BlShort.png"
+                alt="short"
+                width="100px"
+                draggable="true"
+              />
+            </div>
+            <div class="legcont">
+              <img
+                class="leg"
+                id="cargo"
+                data-id="6"
+                src="BPants.png"
+                alt="pants"
+                width="100px"
+                draggable="true"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Small buttons at the bottom left that control skin tone changing and resetting of clothes. -->
+      <div class="bottom-left">
+        <!-- I added the mini boxes as i felt a dress up game couldnt be made without some way to be able to see yourself in the model provided, a range on skin tones 
+         seemed to be a logical addition -->
+        <div class="small-boxes">
+          <div id="mini-box1"></div>
+          <div id="mini-box2"></div>
+          <div id="mini-box3"></div>
+          <div id="mini-box4"></div>
+        </div>
+        <!-- a reset bar in case a user may want to jsut clear everything off of the model without having to refresh the page, as there is no way to remove an individual
+         item without adding a new one on top -->
+        <div class="bottom-bar">Reset</div>
+      </div>
+    </div>
   </body>
 </html>
