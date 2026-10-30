@@ -14,7 +14,7 @@
   --muted: #5e4a63;
 
   /* Kept from the original palette */
-  --plum: hwb(304 20% 67%);
+  --plum: #533251;
 
   /* Accents */
   --berry: #9b3a7d;
@@ -127,14 +127,16 @@ h2 {
   font-size: clamp(32px, 4.6vw, 56px);
 }
 
-/* A tiny sparkle before section headings */
+/* A small dot before section headings */
 h2::before {
-  content: "✦";
+  content: "";
   display: inline-block;
-  color: var(--berry);
-  font-size: 0.4em;
-  margin-right: 0.55em;
-  vertical-align: 0.9em;
+  width: 0.2em;
+  height: 0.2em;
+  border-radius: 50%;
+  background: var(--berry);
+  margin-right: 0.4em;
+  vertical-align: 0.35em;
 }
 
 /* ---------------- Utility ---------------- */
@@ -145,9 +147,9 @@ h2::before {
 }
 
 .underline {
-  text-decoration: underline wavy;
+  text-decoration: underline solid;
   text-decoration-color: var(--berry);
-  text-decoration-thickness: 1px;
+  text-decoration-thickness: 2px;
   text-underline-offset: 7px;
 }
 
@@ -168,7 +170,7 @@ h2::before {
     box-shadow 0.2s ease;
 }
 
-.btn:hover {
+.btn-pink:hover {
   transform: translate(-2px, -2px);
   box-shadow: 6px 6px 0 var(--pink);
 }
@@ -183,10 +185,10 @@ h2::before {
   box-shadow: 6px 6px 0 var(--butter);
 }
 
-/* "App window" frame used for the hero and showreel videos */
+/* Windows-style browser window frame for the hero and showreel videos */
 .window {
   border: var(--border);
-  border-radius: 24px;
+  border-radius: 10px;
   overflow: hidden;
   background: var(--white);
   box-shadow: 8px 8px 0 var(--lilac);
@@ -195,34 +197,70 @@ h2::before {
 .window-bar {
   display: flex;
   align-items: center;
-  gap: 7px;
-  padding: 10px 16px;
+  justify-content: space-between;
+  height: 38px;
+  padding-left: 16px;
   background: var(--butter);
   border-bottom: var(--border);
   font-size: 12px;
   line-height: 1;
 }
 
-.window-bar span {
+.window-title {
+  display: flex;
+  align-items: center;
+  color: var(--ink);
+}
+
+/* minimise, maximise, close */
+.window-controls {
+  display: flex;
+  align-self: stretch;
+}
+
+.window-controls i {
+  position: relative;
+  width: 46px;
+}
+
+.window-controls i::before,
+.window-controls i::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: var(--ink);
+}
+
+/* minimise: a flat line */
+.window-controls .wc-min::before {
   width: 11px;
-  height: 11px;
-  border-radius: 50%;
+  height: 1.5px;
+  transform: translate(-50%, -50%);
+}
+
+/* maximise: an outlined square */
+.window-controls .wc-max::before {
+  width: 10px;
+  height: 10px;
+  background: transparent;
   border: 1.5px solid var(--ink);
-  background: var(--pink);
+  transform: translate(-50%, -50%);
 }
 
-.window-bar span:nth-child(2) {
-  background: var(--white);
+/* close: a cross */
+.window-controls .wc-close::before,
+.window-controls .wc-close::after {
+  width: 14px;
+  height: 1.5px;
 }
 
-.window-bar span:nth-child(3) {
-  background: var(--mint);
+.window-controls .wc-close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.window-bar em {
-  margin-left: auto;
-  font-style: normal;
-  color: var(--plum);
+.window-controls .wc-close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 /* ---------------- Header & navigation (floating pill) ---------------- */
@@ -358,17 +396,14 @@ nav {
   margin: 18px 0 22px;
 }
 
-/* marker-pen highlight instead of italics */
+/* highlighter label behind the surname */
 #hero h1 em {
   font-style: normal;
-  background: linear-gradient(
-    transparent 60%,
-    var(--pink) 60% 92%,
-    transparent 92%
-  );
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-  padding: 0 0.08em;
+  display: inline-block;
+  padding: 0 0.12em 0.06em;
+  border-radius: 0.14em;
+  line-height: 1;
+  margin-left: -0.12em; /* keeps the letters lined up with the first name */
 }
 
 #hero h2 {
@@ -481,6 +516,8 @@ nav {
 
 .ticker-group span:nth-child(even) {
   color: var(--berry);
+  font-size: 0.45em;
+  align-self: center;
 }
 
 @keyframes ticker {
@@ -1000,9 +1037,9 @@ img.works-image:hover {
 }
 
 .contact-info a.underline {
-  text-decoration: underline wavy;
+  text-decoration: underline solid;
   text-decoration-color: var(--berry);
-  text-decoration-thickness: 1px;
+  text-decoration-thickness: 2px;
   text-underline-offset: 7px;
 }
 
@@ -1016,8 +1053,14 @@ footer {
 }
 
 footer p::before {
-  content: "✦ ";
-  color: var(--berry);
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--berry);
+  margin-right: 8px;
+  vertical-align: middle;
 }
 
 /* ---------------- Scroll reveal (added by script.js) ---------------- */
